@@ -13,27 +13,22 @@ namespace Grupo1.Controlador
     {
 
         public static string ruta = "../../Resources/zapatillas.txt";
-
-        
         public int getLastId()
         {
             StreamReader archivo = new StreamReader(ruta);
             int lastId = 1;
+            while (!archivo.EndOfStream)
 
 
-                while (!archivo.EndOfStream)
-                {
-                    string zapatilla = archivo.ReadLine();
-                    Zapatilla zap = new Zapatilla(zapatilla);
-                    lastId = zap.Id;
-                }
-                archivo.Close();
+            {
+                string zapatilla = archivo.ReadLine();
+                Zapatilla zap = new Zapatilla(zapatilla);
+                lastId = zap.Id;
+            }
+            archivo.Close();
 
             return lastId +1;
         }
-
-
-
         public bool crearZapatilla(Zapatilla zap)
         {
 
@@ -48,18 +43,16 @@ namespace Grupo1.Controlador
             {
                 Trace.WriteLine("Ocurrio un error"+ex.ToString());
             }
-
             return true;
         }
 
 
+     
 
         public bool eliminarZapatilla(Zapatilla zap)
         {
             return true;
         }
-
-
         public bool editarZapatilla(Zapatilla zap)
         {
             return true;
@@ -68,41 +61,13 @@ namespace Grupo1.Controlador
 
         public Zapatilla getOne(int id)
         {
-            StreamReader archivo = new StreamReader(ruta);
-
-
-                while (!archivo.EndOfStream)
-                {
-                    string zapatilla = archivo.ReadLine();
-                    Zapatilla zap = new Zapatilla(zapatilla);
-                    if(id == zap.Id)
-                    {
-                        return zap;
-                    }
-                }
-            archivo.Close();
-
             return new Zapatilla();
         }
 
-
         public List<Zapatilla> getAll(){
-
-            List<Zapatilla> Zapatillas = new List<Zapatilla>();
-            StreamReader archivo = new StreamReader(ruta);
-
-
-                while (!archivo.EndOfStream)
-                {
-                    string zapatilla = archivo.ReadLine();
-                    Zapatilla zap = new Zapatilla(zapatilla);
-                    Zapatillas.Add(zap);
+        
+        return new List<Zapatilla>();
                 }
-            archivo.Close();
-
-            return Zapatillas;
-
-        }
 
     }
 }
