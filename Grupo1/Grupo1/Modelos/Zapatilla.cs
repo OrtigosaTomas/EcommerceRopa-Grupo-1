@@ -12,6 +12,7 @@ namespace Grupo1.Modelos
       
 
         public int Id { set; get; }
+
         public string Nombre { set; get; }
 
         public string Descripcion { set; get; } 
@@ -19,26 +20,32 @@ namespace Grupo1.Modelos
         public string img { set; get; }
 
         public int Precio { set; get; }
-        public Zapatilla()
+
+        //public int TipoZapatilla;
+
+        //public int GeneroZapatilla;
+
+        public Zapatilla(){}
+
+        public Zapatilla(int id, string nombre, string descripcion, int precio /* int tipo, int genero */) 
         {
-        }
-        public Zapatilla(int id, string nombre, string descripcion, int precio) 
-        {
-        Id=id;
-        Nombre=nombre;
-        Descripcion=descripcion;
-        Precio=precio;
+            Id=id;
+            Nombre=nombre;
+            Descripcion=descripcion;
+            Precio=precio;
+            //TipoZapatilla = tipo.ToString();
+            //GeneroZapatilla = genero.ToString();
         }
       
 
         public Zapatilla(String line) { 
-        string[] datos = line.Split(';');
-        Id= int.Parse(datos[0]);    
-        Nombre = datos[1];
+
+            string[] datos = line.Split(';');
+            Id= int.Parse(datos[0]);    
+            Nombre = datos[1];
             Precio = int.Parse(datos[2]);
             Descripcion = datos[3];
      
-        
         }
 
         
