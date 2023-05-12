@@ -50,28 +50,33 @@ namespace Grupo1
                 Zapatilla zap_nueva = new Zapatilla();
 
                
+
                 zap_nueva.Descripcion = txt_descripcion.Text;
+
                 zap_nueva.Id = int.Parse(txt_id.Text);
+
                 zap_nueva.Precio = int.Parse(txt_precio.Text);
                 zap_nueva.Nombre = txt_nombre.Text;
-
                 zapController.crearZapatilla(zap_nueva);
 
                 txt_id.Text = zapController.getLastId().ToString();
 
-                 if(DEBUG_MODE == 1)
+
+                if(DEBUG_MODE == 1)
                 {
-                 Trace.WriteLine("Se esta creando una zapatilla");
+
+                    Trace.WriteLine("Se esta creando una zapatilla");
                 }
                 if (DEBUG_MODE == 2)
-                {}
+                {
+
+                }
             }
             catch (Exception ex)
             {
                 Trace.WriteLine("Ocurrio un error al crear una nueva zapatilla");
             }
-
-        }
+            }
 
         private void btn_form2(object sender, EventArgs e)
         {
@@ -83,11 +88,11 @@ namespace Grupo1
         {
             Form2 form2 = new Form2();
             DialogResult dialogResult = form2.ShowDialog();
+            if (dialogResult == DialogResult.OK)
+            {
+                Trace.WriteLine("OK");
+            }
 
-                if (dialogResult == DialogResult.OK)
-                {
-                    Trace.WriteLine("OK");
-                }
 
             this.Hide();
 
