@@ -17,3 +17,6 @@
 27;hola;20000;asdasdadasdad
 28;hola;444;asdasdad4asdad
 29;a;123;Ingrese Descripcion
+30;Ingrese Nombre;123;Ingrese Descripcion
+31;Ingrese Nombre;123;Ingrese Descripcion
+32;Ingrese Nombre;123;Ingrese Descripcion
