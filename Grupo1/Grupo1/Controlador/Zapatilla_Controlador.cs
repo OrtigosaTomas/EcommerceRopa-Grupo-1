@@ -1,4 +1,5 @@
-﻿using Grupo1.Modelos;
+using Grupo1.Modelos;
+using Grupo1.Conexion;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,8 +12,10 @@ namespace Grupo1.Controlador
 {
     public class Zapatilla_Controlador
     {
+        
 
         public static string ruta = "../../Resources/zapatillas.txt";
+
         public int getLastId()
         {
             StreamReader archivo = new StreamReader(ruta);
@@ -29,21 +32,35 @@ namespace Grupo1.Controlador
 
             return lastId +1;
         }
-        public bool crearZapatilla(Zapatilla zap)
+
+
+        public bool altaZapatilla(Zapatilla zap)
         {
 
-            try {
-
-                String linea = zap.Id + ";" + zap.Nombre + ";" + zap.Precio + ";" +zap.Descripcion;
-                StreamWriter archivo = new StreamWriter(ruta, true);
-                archivo.WriteLine(linea);
-                archivo.Close();
-            }
-            catch(Exception ex)
+             try
             {
-                Trace.WriteLine("Ocurrio un error"+ex.ToString());
+                Conexion.DB_Conexion();
+
+                string myQuery = "INSERT INTO indumentaria(nombre,detalle,precio) VALUES("+zap.nombre+","+zap.descripcion+","+zap.precio")";
+                
+                
+                MySqlCommand cmd = new MySqlCommand(myQuery, Conexion.DB_Conexion());
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while(reader.Read())
+                {
+                Trace.WriteLine("zapatilla dada de alta exitosamente "+reader["id"]+" "+reader["nombre"]);
+                }
+                reader.Close();
+                Conexion.DB_Conexion().Close();
+                return true;
+
+            }catch(Exception E)
+            {
+                Trace.WriteLine(E.Message); 
+                Conexion.DB_Conexion().Close();
+                return false;
+
             }
-            return true;
         }
 
 
@@ -51,23 +68,144 @@ namespace Grupo1.Controlador
 
         public bool eliminarZapatilla(Zapatilla zap)
         {
-            return true;
+
+            try
+            {
+                Conexion.DB_Conexion();
+                Zapatilla zapaEncontrada = getOne(zap);
+
+                string myQuery = "DELETE * FROM indumentaria WHERE id="+zap.id;
+
+                if(zapaEncontrada!=null){
+
+                    MySqlCommand cmd = new MySqlCommand(myQuery, Conexion.DB_Conexion());
+                    MySqlDataReader reader = cmd.ExecuteReader();
+
+                    while(reader.Read())
+                    {
+                        Trace.WriteLine("zapatilla eliminada "+reader["id"]+" "+reader["nombre"]);
+                    }
+
+                    reader.Close();
+                    Conexion.DB_Conexion().Close();
+                    return true;
+                }
+                
+                
+            }catch(Exception E)
+            {
+                Trace.WriteLine(E.Message); 
+                Conexion.DB_Conexion().Close();
+                return false;
+
+            }
+            
         }
+
+
         public bool editarZapatilla(Zapatilla zap)
         {
-            return true;
+             try
+            {
+                Conexion.DB_Conexion();
+                Zapatilla zapaEncontrada = getOne(zap);
+
+                string myQuery = "UPDATE indumentaria SET id="+zap.id+",nombre="+zap.nombre+",detalle="+zap.descripcion+",precio="+zap.precio+
+                                  "WHERE id="zapaEncontrada.Id;
+                
+                
+                if(zapaEncontrada!=null){
+                    MySqlCommand cmd = new MySqlCommand(myQuery, Conexion.DB_Conexion());
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                     while(reader.Read())
+                    {
+                    Trace.WriteLine("zapatilla editada "+reader["id"]+" "+reader["nombre"]);
+                    }
+                    reader.Close();
+                    Conexion.DB_Conexion().Close();
+                    return true;
+                }
+
+            }catch(Exception E)
+            {
+                Trace.WriteLine(E.Message); 
+                Conexion.DB_Conexion().Close();
+                return false;
+
+            }
         }
+
 
 
         public Zapatilla getOne(int id)
         {
-            return new Zapatilla();
+            Zapatilla zapatilla = new Zapatilla();
+
+            try{
+                Conexion.DB_Conexion();
+                string myQuery = "SELECT * FROM indumentaria WHERE id="+id;
+                MySqlCommand cmd = new MySqlCommand(myQuery, Conexion.DB_Conexion());
+                MySqlDataReader reader = cmd.ExecuteReader();
+                
+
+                while(reader.Read())
+                {
+                    zapatilla.Add({
+                    Id = int.Parse(reader["id"]),
+                    Nombre = reader["nombre"].ToString(),
+                    Descripcion = reader["detalle"].ToString(),
+                    Precio = int.Parse(reader["precio"])
+                    });
+                }
+
+            reader.Close();
+            Conexion.DB_Conexion().Close();
+            return zapatilla;
+            }catch(Exception E)
+            {
+                Trace.WriteLine(E.Message); 
+
+            }finally{
+                return zapatilla;
+            }
+                
         }
+
 
         public List<Zapatilla> getAll(){
         
-        return new List<Zapatilla>();
+          List<Zapatilla> Zapatillas = new List<Zapatilla>();
+
+            try{
+
+                string myQuery = "SELECT * FROM indumentaria";
+                MySqlCommand cmd = new MySqlCommand(myQuery, Conexion.DB_Conexion());
+                MySqlDataReader reader = cmd.ExecuteReader();
+                
+
+                while(reader.Read())
+                {
+                    Zapatillas.Add(new Zapatilla{
+                    Id = int.Parse(reader["id"]),
+                    Nombre = reader["nombre"].ToString(),
+                    Descripcion = reader["detalle"].ToString(),
+                    Precio = int.Parse(reader["precio"])
+                    });
                 }
+
+            reader.Close();
+            Conexion.DB_Conexion().Close();
+            return Zapatillas;
+
+            }catch(Exception E)
+            {
+                Trace.WriteLine(E.Message); 
+
+            }finally{
+                return Zapatillas;
+                }
+        }
+
 
     }
 }
