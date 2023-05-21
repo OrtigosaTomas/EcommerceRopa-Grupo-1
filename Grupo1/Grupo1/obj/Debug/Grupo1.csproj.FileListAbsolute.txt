@@ -48,3 +48,12 @@ C:\Users\ortig\source\repos\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.CoreCompileInp
 C:\Users\ortig\source\repos\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.CopyComplete
 C:\Users\ortig\source\repos\Grupo1\Grupo1\obj\Debug\Grupo1.exe
 C:\Users\ortig\source\repos\Grupo1\Grupo1\obj\Debug\Grupo1.pdb
+C:\Users\Usuario\Desktop\g1Proyecto\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\g1Proyecto\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Desktop\g1Proyecto\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Form1.resources
+C:\Users\Usuario\Desktop\g1Proyecto\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Form2.resources
+C:\Users\Usuario\Desktop\g1Proyecto\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Properties.Resources.resources
+C:\Users\Usuario\Desktop\g1Proyecto\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\g1Proyecto\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\g1Proyecto\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.exe
+C:\Users\Usuario\Desktop\g1Proyecto\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.pdb
