@@ -36,6 +36,12 @@
             this.radPiluso = new System.Windows.Forms.RadioButton();
             this.radHombre = new System.Windows.Forms.RadioButton();
             this.radMujer = new System.Windows.Forms.RadioButton();
+            this.dgIndumentaria = new System.Windows.Forms.DataGridView();
+            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgIndumentaria)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -122,11 +128,56 @@
             this.radMujer.Text = "Mujer";
             this.radMujer.UseVisualStyleBackColor = true;
             // 
+            // dgIndumentaria
+            // 
+            this.dgIndumentaria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgIndumentaria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.colNombre,
+            this.colTipo,
+            this.colDetalle,
+            this.colPrecio});
+            this.dgIndumentaria.Location = new System.Drawing.Point(218, 27);
+            this.dgIndumentaria.Name = "dgIndumentaria";
+            this.dgIndumentaria.RowHeadersWidth = 51;
+            this.dgIndumentaria.RowTemplate.Height = 24;
+            this.dgIndumentaria.Size = new System.Drawing.Size(553, 443);
+            this.dgIndumentaria.TabIndex = 8;
+            this.dgIndumentaria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // colNombre
+            // 
+            this.colNombre.HeaderText = "Nombre";
+            this.colNombre.MinimumWidth = 6;
+            this.colNombre.Name = "colNombre";
+            this.colNombre.Width = 125;
+            // 
+            // colTipo
+            // 
+            this.colTipo.HeaderText = "Tipo";
+            this.colTipo.MinimumWidth = 6;
+            this.colTipo.Name = "colTipo";
+            this.colTipo.Width = 125;
+            // 
+            // colDetalle
+            // 
+            this.colDetalle.HeaderText = "Detalle";
+            this.colDetalle.MinimumWidth = 6;
+            this.colDetalle.Name = "colDetalle";
+            this.colDetalle.Width = 125;
+            // 
+            // colPrecio
+            // 
+            this.colPrecio.HeaderText = "Precio";
+            this.colPrecio.MinimumWidth = 6;
+            this.colPrecio.Name = "colPrecio";
+            this.colPrecio.Width = 125;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 569);
+            this.ClientSize = new System.Drawing.Size(873, 499);
+            this.Controls.Add(this.dgIndumentaria);
             this.Controls.Add(this.radMujer);
             this.Controls.Add(this.radHombre);
             this.Controls.Add(this.radPiluso);
@@ -138,6 +189,7 @@
             this.Name = "Form1";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgIndumentaria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -152,5 +204,10 @@
         private System.Windows.Forms.RadioButton radPiluso;
         private System.Windows.Forms.RadioButton radHombre;
         private System.Windows.Forms.RadioButton radMujer;
+        private System.Windows.Forms.DataGridView dgIndumentaria;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colTipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDetalle;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPrecio;
     }
 }

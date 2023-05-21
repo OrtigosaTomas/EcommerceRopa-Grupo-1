@@ -15,6 +15,7 @@ namespace Grupo1.Properties
     public partial class Form1 : Form
     {
 
+        MySqlConnection myCon;
         String query;
 
         public Form1()
@@ -27,17 +28,8 @@ namespace Grupo1.Properties
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ConQuery(String query)
+      
+        private void Conectar()
         {
             try
             {
@@ -47,7 +39,7 @@ namespace Grupo1.Properties
                 string pass = "";
                 string cadenaConexion = "server=" + server + ";database=" + database + ";" + "Uid=" + user + ";" + ";pwd=" + pass + ";";
 
-                MySqlConnection myCon = new MySqlConnection(cadenaConexion);
+                myCon = new MySqlConnection(cadenaConexion);
                 myCon.Open();
 
             }
@@ -55,6 +47,34 @@ namespace Grupo1.Properties
             {
                 Console.WriteLine("Error de conexion " + error);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Conectar();
+            string query = "SELECT * FROM `indumentaria` WHERE tipo = gorra";
+            MySqlCommand comandoDB = new MySqlCommand(query, myCon);
+            comandoDB.CommandTimeout = 60;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Conectar();
+            string query = "SELECT * FROM `indumentaria` WHERE tipo = zapatilla";
+            MySqlCommand comandoDB = new MySqlCommand(query, myCon);
+            comandoDB.CommandTimeout = 60;
+            MySqlDataReader reader;
+            try{
+                reader = comandoDB.ExecuteReader();
+            }
+            catch(Exception ex) {
+                Console.WriteLine(ex);
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
