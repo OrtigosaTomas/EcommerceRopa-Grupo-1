@@ -120,10 +120,10 @@ C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\ob
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Form1.resources
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Form2.resources
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Form3.resources
-C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Properties.Form1.resources
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Properties.Resources.resources
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.GenerateResource.cache
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.CoreCompileInputs.cache
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.CopyComplete
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.exe
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.pdb
+C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Properties.Form4.resources

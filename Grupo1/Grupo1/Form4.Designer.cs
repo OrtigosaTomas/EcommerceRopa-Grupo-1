@@ -1,6 +1,6 @@
 ﻿namespace Grupo1.Properties
 {
-    partial class Form1
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -140,9 +140,8 @@
             this.dgIndumentaria.Name = "dgIndumentaria";
             this.dgIndumentaria.RowHeadersWidth = 51;
             this.dgIndumentaria.RowTemplate.Height = 24;
-            this.dgIndumentaria.Size = new System.Drawing.Size(553, 443);
+            this.dgIndumentaria.Size = new System.Drawing.Size(781, 443);
             this.dgIndumentaria.TabIndex = 8;
-            this.dgIndumentaria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // colNombre
             // 
@@ -172,11 +171,11 @@
             this.colPrecio.Name = "colPrecio";
             this.colPrecio.Width = 125;
             // 
-            // Form1
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 499);
+            this.ClientSize = new System.Drawing.Size(1011, 499);
             this.Controls.Add(this.dgIndumentaria);
             this.Controls.Add(this.radMujer);
             this.Controls.Add(this.radHombre);
@@ -186,7 +185,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "Form4";
             this.Text = "Form4";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgIndumentaria)).EndInit();

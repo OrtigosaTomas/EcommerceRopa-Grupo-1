@@ -1,5 +1,6 @@
 ﻿using Grupo1.Controlador;
 using Grupo1.Modelos;
+using Grupo1.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -74,7 +75,7 @@ namespace Grupo1
             }
             catch (Exception ex)
             {
-                Trace.WriteLine("Ocurrio un error al crear una nueva zapatilla");
+                Trace.WriteLine("Ocurrio un error al crear una nueva zapatilla" + ex);
             }
             }
 
@@ -97,6 +98,13 @@ namespace Grupo1
             this.Hide();
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            DialogResult dialogResult = form4.ShowDialog();
+            this.Hide();
         }
     }
     }

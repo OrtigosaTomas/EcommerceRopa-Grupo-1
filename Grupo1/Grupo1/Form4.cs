@@ -12,13 +12,13 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Grupo1.Properties
 {
-    public partial class Form1 : Form
+    public partial class Form4 : Form
     {
 
         MySqlConnection myCon;
         String query;
 
-        public Form1()
+        public Form4()
         {
             InitializeComponent();
         }
@@ -49,32 +49,43 @@ namespace Grupo1.Properties
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
+        private void EjecutarQuery(){
             Conectar();
-            string query = "SELECT * FROM `indumentaria` WHERE tipo = gorra";
-            MySqlCommand comandoDB = new MySqlCommand(query, myCon);
-            comandoDB.CommandTimeout = 60;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Conectar();
-            string query = "SELECT * FROM `indumentaria` WHERE tipo = zapatilla";
             MySqlCommand comandoDB = new MySqlCommand(query, myCon);
             comandoDB.CommandTimeout = 60;
             MySqlDataReader reader;
             try{
                 reader = comandoDB.ExecuteReader();
+                if (reader.HasRows) {
+                    while (reader.Read()) {
+                        int n = dgIndumentaria.Rows.Add();
+                        dgIndumentaria.Rows[n].Cells[0].Value = reader.GetString(0);
+                        dgIndumentaria.Rows[n].Cells[1].Value = reader.GetString(1);
+                        dgIndumentaria.Rows[n].Cells[2].Value = reader.GetString(2);
+                        dgIndumentaria.Rows[n].Cells[3].Value = reader.GetString(3);
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("no hay indumentaria");
+                }
             }
-            catch(Exception ex) {
-                Console.WriteLine(ex);
+            catch (Exception ex) {
+                Console.WriteLine("Error al ejecutar la query" + ex);
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+            EjecutarQuery();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"zapatilla\";";
+            EjecutarQuery();
+        }
+
     }
 }
