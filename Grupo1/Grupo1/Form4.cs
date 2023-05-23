@@ -82,13 +82,49 @@ namespace Grupo1.Properties
         {
             query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
             EjecutarQuery();
+            if (radCurvas.Checked == true)
+            {
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+            }
+            if (radPiluso.Checked == true)
+            {
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+            }
+            if (radPlanas.Checked == true)
+            {
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"zapatilla\";";
             EjecutarQuery();
+            if (radHombre.Checked == true)
+            {
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+            }
+            if (radMujer.Checked == true)
+            {
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+            }
+            if (radMinimal.Checked == true)
+            {
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+            }
+            if (radRunning.Checked == true)
+            {
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+            }
+            if (radTenis.Checked == true)
+            {
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+            }
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
