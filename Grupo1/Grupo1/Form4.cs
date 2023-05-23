@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Relational;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -54,7 +55,9 @@ namespace Grupo1.Properties
             MySqlCommand comandoDB = new MySqlCommand(query, myCon);
             comandoDB.CommandTimeout = 60;
             MySqlDataReader reader;
-            try{
+            dgIndumentaria.Rows.Clear();
+            try
+            {
                 reader = comandoDB.ExecuteReader();
                 if (reader.HasRows) {
                     while (reader.Read()) {
