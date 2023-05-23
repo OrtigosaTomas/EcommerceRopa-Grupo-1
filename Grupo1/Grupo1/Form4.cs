@@ -81,45 +81,59 @@ namespace Grupo1.Properties
         private void button1_Click(object sender, EventArgs e)
         {
             query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
-            EjecutarQuery();
-            if (radCurvas.Checked == true)
+
+            if (radSinFg.Checked == true)
             {
                 query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+            }
+            if (radCurvas.Checked == true)
+            {
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"3\";";
             }
             if (radPiluso.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"1\";";
             }
             if (radPlanas.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"2\";";
             }
+
+            EjecutarQuery();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"zapatilla\";";
-            EjecutarQuery();
+
+            if (radSinFz.Checked == true)
+            {
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"zapatilla\";";
+            }
             if (radHombre.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `genero_id` = \"1\";";
             }
             if (radMujer.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `genero_id` = \"2\";";
             }
             if (radMinimal.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"6\";";
             }
             if (radRunning.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"5\";";
             }
             if (radTenis.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"4\";";
             }
+
+            EjecutarQuery();
+
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

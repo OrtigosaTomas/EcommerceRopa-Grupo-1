@@ -43,14 +43,14 @@
             this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbGorras = new System.Windows.Forms.GroupBox();
             this.gbGenero = new System.Windows.Forms.GroupBox();
-            this.gbZapas = new System.Windows.Forms.GroupBox();
             this.radMinimal = new System.Windows.Forms.RadioButton();
             this.radRunning = new System.Windows.Forms.RadioButton();
             this.radTenis = new System.Windows.Forms.RadioButton();
+            this.radSinFz = new System.Windows.Forms.RadioButton();
+            this.radSinFg = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgIndumentaria)).BeginInit();
             this.gbGorras.SuspendLayout();
             this.gbGenero.SuspendLayout();
-            this.gbZapas.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -85,7 +85,7 @@
             // radCurvas
             // 
             this.radCurvas.AutoSize = true;
-            this.radCurvas.Location = new System.Drawing.Point(6, 21);
+            this.radCurvas.Location = new System.Drawing.Point(3, 44);
             this.radCurvas.Name = "radCurvas";
             this.radCurvas.Size = new System.Drawing.Size(70, 20);
             this.radCurvas.TabIndex = 3;
@@ -96,7 +96,7 @@
             // radPlanas
             // 
             this.radPlanas.AutoSize = true;
-            this.radPlanas.Location = new System.Drawing.Point(6, 47);
+            this.radPlanas.Location = new System.Drawing.Point(3, 70);
             this.radPlanas.Name = "radPlanas";
             this.radPlanas.Size = new System.Drawing.Size(70, 20);
             this.radPlanas.TabIndex = 4;
@@ -107,7 +107,7 @@
             // radPiluso
             // 
             this.radPiluso.AutoSize = true;
-            this.radPiluso.Location = new System.Drawing.Point(6, 73);
+            this.radPiluso.Location = new System.Drawing.Point(3, 96);
             this.radPiluso.Name = "radPiluso";
             this.radPiluso.Size = new System.Drawing.Size(65, 20);
             this.radPiluso.TabIndex = 5;
@@ -118,7 +118,7 @@
             // radHombre
             // 
             this.radHombre.AutoSize = true;
-            this.radHombre.Location = new System.Drawing.Point(6, 21);
+            this.radHombre.Location = new System.Drawing.Point(6, 52);
             this.radHombre.Name = "radHombre";
             this.radHombre.Size = new System.Drawing.Size(77, 20);
             this.radHombre.TabIndex = 6;
@@ -129,7 +129,7 @@
             // radMujer
             // 
             this.radMujer.AutoSize = true;
-            this.radMujer.Location = new System.Drawing.Point(6, 47);
+            this.radMujer.Location = new System.Drawing.Point(6, 78);
             this.radMujer.Name = "radMujer";
             this.radMujer.Size = new System.Drawing.Size(61, 20);
             this.radMujer.TabIndex = 7;
@@ -182,12 +182,13 @@
             // 
             // gbGorras
             // 
+            this.gbGorras.Controls.Add(this.radSinFg);
             this.gbGorras.Controls.Add(this.radCurvas);
             this.gbGorras.Controls.Add(this.radPlanas);
             this.gbGorras.Controls.Add(this.radPiluso);
             this.gbGorras.Location = new System.Drawing.Point(12, 179);
             this.gbGorras.Name = "gbGorras";
-            this.gbGorras.Size = new System.Drawing.Size(200, 100);
+            this.gbGorras.Size = new System.Drawing.Size(200, 121);
             this.gbGorras.TabIndex = 9;
             this.gbGorras.TabStop = false;
             this.gbGorras.Text = "Filtros para Gorras";
@@ -195,31 +196,23 @@
             // 
             // gbGenero
             // 
+            this.gbGenero.Controls.Add(this.radSinFz);
+            this.gbGenero.Controls.Add(this.radMinimal);
+            this.gbGenero.Controls.Add(this.radRunning);
             this.gbGenero.Controls.Add(this.radHombre);
+            this.gbGenero.Controls.Add(this.radTenis);
             this.gbGenero.Controls.Add(this.radMujer);
             this.gbGenero.Location = new System.Drawing.Point(12, 424);
             this.gbGenero.Name = "gbGenero";
-            this.gbGenero.Size = new System.Drawing.Size(200, 82);
+            this.gbGenero.Size = new System.Drawing.Size(200, 188);
             this.gbGenero.TabIndex = 10;
             this.gbGenero.TabStop = false;
-            this.gbGenero.Text = "Genero Zapatillas";
-            // 
-            // gbZapas
-            // 
-            this.gbZapas.Controls.Add(this.radMinimal);
-            this.gbZapas.Controls.Add(this.radRunning);
-            this.gbZapas.Controls.Add(this.radTenis);
-            this.gbZapas.Location = new System.Drawing.Point(12, 512);
-            this.gbZapas.Name = "gbZapas";
-            this.gbZapas.Size = new System.Drawing.Size(200, 100);
-            this.gbZapas.TabIndex = 10;
-            this.gbZapas.TabStop = false;
-            this.gbZapas.Text = "Filtros para Gorras";
+            this.gbGenero.Text = "Filtro para Zapatillas";
             // 
             // radMinimal
             // 
             this.radMinimal.AutoSize = true;
-            this.radMinimal.Location = new System.Drawing.Point(6, 21);
+            this.radMinimal.Location = new System.Drawing.Point(6, 104);
             this.radMinimal.Name = "radMinimal";
             this.radMinimal.Size = new System.Drawing.Size(102, 20);
             this.radMinimal.TabIndex = 3;
@@ -230,7 +223,7 @@
             // radRunning
             // 
             this.radRunning.AutoSize = true;
-            this.radRunning.Location = new System.Drawing.Point(6, 47);
+            this.radRunning.Location = new System.Drawing.Point(6, 130);
             this.radRunning.Name = "radRunning";
             this.radRunning.Size = new System.Drawing.Size(77, 20);
             this.radRunning.TabIndex = 4;
@@ -241,7 +234,7 @@
             // radTenis
             // 
             this.radTenis.AutoSize = true;
-            this.radTenis.Location = new System.Drawing.Point(6, 73);
+            this.radTenis.Location = new System.Drawing.Point(6, 156);
             this.radTenis.Name = "radTenis";
             this.radTenis.Size = new System.Drawing.Size(62, 20);
             this.radTenis.TabIndex = 5;
@@ -249,12 +242,33 @@
             this.radTenis.Text = "Tenis";
             this.radTenis.UseVisualStyleBackColor = true;
             // 
+            // radSinFz
+            // 
+            this.radSinFz.AutoSize = true;
+            this.radSinFz.Location = new System.Drawing.Point(6, 26);
+            this.radSinFz.Name = "radSinFz";
+            this.radSinFz.Size = new System.Drawing.Size(81, 20);
+            this.radSinFz.TabIndex = 6;
+            this.radSinFz.TabStop = true;
+            this.radSinFz.Text = "Sin filtros";
+            this.radSinFz.UseVisualStyleBackColor = true;
+            // 
+            // radSinFg
+            // 
+            this.radSinFg.AutoSize = true;
+            this.radSinFg.Location = new System.Drawing.Point(3, 21);
+            this.radSinFg.Name = "radSinFg";
+            this.radSinFg.Size = new System.Drawing.Size(81, 20);
+            this.radSinFg.TabIndex = 6;
+            this.radSinFg.TabStop = true;
+            this.radSinFg.Text = "Sin filtros";
+            this.radSinFg.UseVisualStyleBackColor = true;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1011, 641);
-            this.Controls.Add(this.gbZapas);
             this.Controls.Add(this.gbGenero);
             this.Controls.Add(this.gbGorras);
             this.Controls.Add(this.dgIndumentaria);
@@ -269,8 +283,6 @@
             this.gbGorras.PerformLayout();
             this.gbGenero.ResumeLayout(false);
             this.gbGenero.PerformLayout();
-            this.gbZapas.ResumeLayout(false);
-            this.gbZapas.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,9 +304,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrecio;
         private System.Windows.Forms.GroupBox gbGorras;
         private System.Windows.Forms.GroupBox gbGenero;
-        private System.Windows.Forms.GroupBox gbZapas;
         private System.Windows.Forms.RadioButton radMinimal;
         private System.Windows.Forms.RadioButton radRunning;
         private System.Windows.Forms.RadioButton radTenis;
+        private System.Windows.Forms.RadioButton radSinFg;
+        private System.Windows.Forms.RadioButton radSinFz;
     }
 }
