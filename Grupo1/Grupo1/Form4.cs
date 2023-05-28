@@ -17,11 +17,13 @@ namespace Grupo1.Properties
     {
 
         MySqlConnection myCon;
-        String query;
+        String query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE 1";
 
         public Form4()
         {
             InitializeComponent();
+            Conectar();
+            EjecutarQuery();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -51,7 +53,7 @@ namespace Grupo1.Properties
         }
 
         private void EjecutarQuery(){
-            Conectar();
+          
             MySqlCommand comandoDB = new MySqlCommand(query, myCon);
             comandoDB.CommandTimeout = 60;
             MySqlDataReader reader;
@@ -67,6 +69,7 @@ namespace Grupo1.Properties
                         dgIndumentaria.Rows[n].Cells[2].Value = reader.GetString(2);
                         dgIndumentaria.Rows[n].Cells[3].Value = reader.GetString(3);
                     }
+                    reader.Close();
                 }
                 else
                 {
@@ -139,6 +142,30 @@ namespace Grupo1.Properties
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string where = "where 1 = 1";
+            if (tboxNombre.Text != "")
+            {
+                where = where + " AND nombre like \"%" + tboxNombre.Text + "%\"; ";
+            }
+            if (txtBoxTipo.Text != "")
+            {
+                where = where + " AND tipo like \"%" + txtBoxTipo.Text + "%\"; ";
+            }
+            if (txtBoxPrecio.Text != "")
+            {
+                where = where + " AND precio like \"%" + txtBoxPrecio.Text + "%\"; ";
+            }
+            query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria`" + where;
+            EjecutarQuery();
         }
     }
 }

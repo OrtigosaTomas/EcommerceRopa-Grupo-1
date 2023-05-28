@@ -42,12 +42,20 @@
             this.colDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbGorras = new System.Windows.Forms.GroupBox();
+            this.radSinFg = new System.Windows.Forms.RadioButton();
             this.gbGenero = new System.Windows.Forms.GroupBox();
+            this.radSinFz = new System.Windows.Forms.RadioButton();
             this.radMinimal = new System.Windows.Forms.RadioButton();
             this.radRunning = new System.Windows.Forms.RadioButton();
             this.radTenis = new System.Windows.Forms.RadioButton();
-            this.radSinFz = new System.Windows.Forms.RadioButton();
-            this.radSinFg = new System.Windows.Forms.RadioButton();
+            this.labelBuscar = new System.Windows.Forms.Label();
+            this.tboxNombre = new System.Windows.Forms.TextBox();
+            this.txtBoxTipo = new System.Windows.Forms.TextBox();
+            this.txtBoxPrecio = new System.Windows.Forms.TextBox();
+            this.labelNombre = new System.Windows.Forms.Label();
+            this.labelTipo = new System.Windows.Forms.Label();
+            this.labelPrecio = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgIndumentaria)).BeginInit();
             this.gbGorras.SuspendLayout();
             this.gbGenero.SuspendLayout();
@@ -145,11 +153,11 @@
             this.colTipo,
             this.colDetalle,
             this.colPrecio});
-            this.dgIndumentaria.Location = new System.Drawing.Point(218, 27);
+            this.dgIndumentaria.Location = new System.Drawing.Point(218, 61);
             this.dgIndumentaria.Name = "dgIndumentaria";
             this.dgIndumentaria.RowHeadersWidth = 51;
             this.dgIndumentaria.RowTemplate.Height = 24;
-            this.dgIndumentaria.Size = new System.Drawing.Size(781, 585);
+            this.dgIndumentaria.Size = new System.Drawing.Size(781, 551);
             this.dgIndumentaria.TabIndex = 8;
             // 
             // colNombre
@@ -194,6 +202,17 @@
             this.gbGorras.Text = "Filtros para Gorras";
             this.gbGorras.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // radSinFg
+            // 
+            this.radSinFg.AutoSize = true;
+            this.radSinFg.Location = new System.Drawing.Point(3, 21);
+            this.radSinFg.Name = "radSinFg";
+            this.radSinFg.Size = new System.Drawing.Size(81, 20);
+            this.radSinFg.TabIndex = 6;
+            this.radSinFg.TabStop = true;
+            this.radSinFg.Text = "Sin filtros";
+            this.radSinFg.UseVisualStyleBackColor = true;
+            // 
             // gbGenero
             // 
             this.gbGenero.Controls.Add(this.radSinFz);
@@ -208,6 +227,17 @@
             this.gbGenero.TabIndex = 10;
             this.gbGenero.TabStop = false;
             this.gbGenero.Text = "Filtro para Zapatillas";
+            // 
+            // radSinFz
+            // 
+            this.radSinFz.AutoSize = true;
+            this.radSinFz.Location = new System.Drawing.Point(6, 26);
+            this.radSinFz.Name = "radSinFz";
+            this.radSinFz.Size = new System.Drawing.Size(81, 20);
+            this.radSinFz.TabIndex = 6;
+            this.radSinFz.TabStop = true;
+            this.radSinFz.Text = "Sin filtros";
+            this.radSinFz.UseVisualStyleBackColor = true;
             // 
             // radMinimal
             // 
@@ -242,33 +272,87 @@
             this.radTenis.Text = "Tenis";
             this.radTenis.UseVisualStyleBackColor = true;
             // 
-            // radSinFz
+            // labelBuscar
             // 
-            this.radSinFz.AutoSize = true;
-            this.radSinFz.Location = new System.Drawing.Point(6, 26);
-            this.radSinFz.Name = "radSinFz";
-            this.radSinFz.Size = new System.Drawing.Size(81, 20);
-            this.radSinFz.TabIndex = 6;
-            this.radSinFz.TabStop = true;
-            this.radSinFz.Text = "Sin filtros";
-            this.radSinFz.UseVisualStyleBackColor = true;
+            this.labelBuscar.AutoSize = true;
+            this.labelBuscar.Location = new System.Drawing.Point(215, 8);
+            this.labelBuscar.Name = "labelBuscar";
+            this.labelBuscar.Size = new System.Drawing.Size(75, 16);
+            this.labelBuscar.TabIndex = 11;
+            this.labelBuscar.Text = "Buscar por:";
             // 
-            // radSinFg
+            // tboxNombre
             // 
-            this.radSinFg.AutoSize = true;
-            this.radSinFg.Location = new System.Drawing.Point(3, 21);
-            this.radSinFg.Name = "radSinFg";
-            this.radSinFg.Size = new System.Drawing.Size(81, 20);
-            this.radSinFg.TabIndex = 6;
-            this.radSinFg.TabStop = true;
-            this.radSinFg.Text = "Sin filtros";
-            this.radSinFg.UseVisualStyleBackColor = true;
+            this.tboxNombre.Location = new System.Drawing.Point(315, 27);
+            this.tboxNombre.Name = "tboxNombre";
+            this.tboxNombre.Size = new System.Drawing.Size(98, 22);
+            this.tboxNombre.TabIndex = 12;
+            this.tboxNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // txtBoxTipo
+            // 
+            this.txtBoxTipo.Location = new System.Drawing.Point(450, 27);
+            this.txtBoxTipo.Name = "txtBoxTipo";
+            this.txtBoxTipo.Size = new System.Drawing.Size(98, 22);
+            this.txtBoxTipo.TabIndex = 13;
+            // 
+            // txtBoxPrecio
+            // 
+            this.txtBoxPrecio.Location = new System.Drawing.Point(585, 27);
+            this.txtBoxPrecio.Name = "txtBoxPrecio";
+            this.txtBoxPrecio.Size = new System.Drawing.Size(98, 22);
+            this.txtBoxPrecio.TabIndex = 14;
+            // 
+            // labelNombre
+            // 
+            this.labelNombre.AutoSize = true;
+            this.labelNombre.Location = new System.Drawing.Point(335, 9);
+            this.labelNombre.Name = "labelNombre";
+            this.labelNombre.Size = new System.Drawing.Size(59, 16);
+            this.labelNombre.TabIndex = 15;
+            this.labelNombre.Text = "Nombre:";
+            // 
+            // labelTipo
+            // 
+            this.labelTipo.AutoSize = true;
+            this.labelTipo.Location = new System.Drawing.Point(480, 8);
+            this.labelTipo.Name = "labelTipo";
+            this.labelTipo.Size = new System.Drawing.Size(38, 16);
+            this.labelTipo.TabIndex = 16;
+            this.labelTipo.Text = "Tipo:";
+            // 
+            // labelPrecio
+            // 
+            this.labelPrecio.AutoSize = true;
+            this.labelPrecio.Location = new System.Drawing.Point(613, 8);
+            this.labelPrecio.Name = "labelPrecio";
+            this.labelPrecio.Size = new System.Drawing.Size(49, 16);
+            this.labelPrecio.TabIndex = 17;
+            this.labelPrecio.Text = "Precio:";
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(700, 12);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(116, 37);
+            this.btnBuscar.TabIndex = 18;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1011, 641);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.labelPrecio);
+            this.Controls.Add(this.labelTipo);
+            this.Controls.Add(this.labelNombre);
+            this.Controls.Add(this.txtBoxPrecio);
+            this.Controls.Add(this.txtBoxTipo);
+            this.Controls.Add(this.tboxNombre);
+            this.Controls.Add(this.labelBuscar);
             this.Controls.Add(this.gbGenero);
             this.Controls.Add(this.gbGorras);
             this.Controls.Add(this.dgIndumentaria);
@@ -309,5 +393,13 @@
         private System.Windows.Forms.RadioButton radTenis;
         private System.Windows.Forms.RadioButton radSinFg;
         private System.Windows.Forms.RadioButton radSinFz;
+        private System.Windows.Forms.Label labelBuscar;
+        private System.Windows.Forms.TextBox tboxNombre;
+        private System.Windows.Forms.TextBox txtBoxTipo;
+        private System.Windows.Forms.TextBox txtBoxPrecio;
+        private System.Windows.Forms.Label labelNombre;
+        private System.Windows.Forms.Label labelTipo;
+        private System.Windows.Forms.Label labelPrecio;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
