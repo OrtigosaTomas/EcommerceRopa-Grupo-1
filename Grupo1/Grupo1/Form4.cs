@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Grupo1.Form3;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Grupo1.Properties
@@ -17,13 +19,11 @@ namespace Grupo1.Properties
     {
 
         MySqlConnection myCon;
-        String query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE 1";
+        String query;
 
         public Form4()
         {
             InitializeComponent();
-            Conectar();
-            EjecutarQuery();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -31,7 +31,12 @@ namespace Grupo1.Properties
 
         }
 
+
+
+
       
+
+
         private void Conectar()
         {
             try
@@ -48,12 +53,12 @@ namespace Grupo1.Properties
             }
             catch (Exception error)
             {
-                Console.WriteLine("Error de conexion " + error);
+                System.Console.WriteLine("Error de conexion " + error);
             }
         }
 
-        private void EjecutarQuery(){
-          
+        private void EjecutarQuery() {
+            Conectar();
             MySqlCommand comandoDB = new MySqlCommand(query, myCon);
             comandoDB.CommandTimeout = 60;
             MySqlDataReader reader;
@@ -69,7 +74,6 @@ namespace Grupo1.Properties
                         dgIndumentaria.Rows[n].Cells[2].Value = reader.GetString(2);
                         dgIndumentaria.Rows[n].Cells[3].Value = reader.GetString(3);
                     }
-                    reader.Close();
                 }
                 else
                 {
@@ -144,28 +148,183 @@ namespace Grupo1.Properties
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void dgIndumentaria_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            indexRow = e.RowIndex;
+            DataGridViewRow row = dgIndumentaria.Rows[indexRow];
+
+            textBox_nombre.Text = row.Cells[0]?.Value?.ToString();
+            textBox_detalle.Text = row.Cells[2]?.Value?.ToString();
+            textBox_tipo.Text = row.Cells[1]?.Value?.ToString();
+            textBox_precio.Text = row.Cells[3]?.Value?.ToString();
+
+
+
+        }
+
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+        int indexRow;
+
+
+
+
+        private bool editar(string nombre, string detalle, string tipo, Decimal precio, string valorActual)
+        {
+
+
+
+
+            try
+            {
+                string server = "localhost";
+                string database = "mydb";
+                string user = "root";
+                string pass = "";
+                string cadenaConexion = "server=" + server + ";database=" + database + ";" + "Uid=" + user + ";" + "pwd=" + pass + ";";
+
+                using (MySqlConnection myCon = new MySqlConnection(cadenaConexion))
+                {
+                    myCon.Open();
+
+                    using (MySqlCommand cmd = new MySqlCommand("UPDATE indumentaria SET nombre = @nombre, detalle = @detalle, tipo = @tipo, precio = @precio WHERE nombre = @valorActual", myCon))
+                    {
+                        cmd.Parameters.AddWithValue("@nombre", nombre);
+                        cmd.Parameters.AddWithValue("@detalle", detalle);
+                        cmd.Parameters.AddWithValue("@tipo", tipo);
+                        cmd.Parameters.AddWithValue("@precio", precio);
+
+                        cmd.Parameters.AddWithValue("@valorActual", valorActual);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        return rowsAffected > 0;
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error de conexion: " + error.Message, "Error");
+                return false;
+            }
+        }
+
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+         
+            try
+            {
+                string server = "localhost";
+                string database = "mydb";
+                string user = "root";
+                string pass = "";
+                string cadenaConexion = "server=" + server + ";database=" + database + ";" + "Uid=" + user + ";" + "pwd=" + pass + ";";
+
+                using (MySqlConnection myCon = new MySqlConnection(cadenaConexion))
+                {
+                    myCon.Open();
+
+
+
+
+
+                    using (MySqlCommand cmd = new MySqlCommand("SELECT `rol` FROM `cliente` WHERE `usuario` = @usuario ", myCon))
+                    {
+                        System.Console.WriteLine("1");
+
+                        string usuario = GlobalVariables.Usuario;
+
+
+                        System.Console.WriteLine("usuario " + usuario);
+
+
+                        cmd.Parameters.AddWithValue("@usuario", usuario);
+
+                        System.Console.WriteLine(usuario);
+
+
+                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        {
+
+
+                            if (reader.Read())
+                            {
+                                
+                                int rol = reader.GetInt32(0);
+
+
+
+                                if (rol == 0)
+                                {
+                                  
+                                    MessageBox.Show("No tienes el permiso de administrador");
+                                }
+                                else
+                                {
+
+                                    System.Console.WriteLine("3");
+
+                                    DataGridViewRow row = dgIndumentaria.Rows[indexRow];
+
+                                    string nombre = textBox_nombre.Text;
+                                    string detalle = textBox_detalle.Text;
+                                    string tipo = textBox_tipo.Text;
+                                    Decimal precio = Decimal.Parse(textBox_precio.Text);
+                                    string valorActual = row.Cells[0].Value.ToString();
+                                    editar(nombre, detalle, tipo, precio, valorActual);
+
+
+
+                                    MessageBox.Show("Editado correctamente");
+                                    EjecutarQuery();
+
+                                }
+
+
+                            }
+
+
+                        }
+                    }
+                }
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show("Error de conexion: " + error.Message, "Error");
+
+            }
+
+
+
+
+
+
+
+                //   DataGridViewRow newDataRow = dgIndumentaria.Rows[indexRow];
+                // newDataRow.Cells[0].Value = textBox_nombre.Text;
+
+             
+                
+            }
+
+        private void textBox_nombre_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void btnBuscar_Click(object sender, EventArgs e)
+        private void radCurvas_CheckedChanged(object sender, EventArgs e)
         {
-            string where = "where 1 = 1";
-            if (tboxNombre.Text != "")
-            {
-                where = where + " AND nombre like \"%" + tboxNombre.Text + "%\"; ";
-            }
-            if (txtBoxTipo.Text != "")
-            {
-                where = where + " AND tipo like \"%" + txtBoxTipo.Text + "%\"; ";
-            }
-            if (txtBoxPrecio.Text != "")
-            {
-                where = where + " AND precio like \"%" + txtBoxPrecio.Text + "%\"; ";
-            }
-            query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria`" + where;
-            EjecutarQuery();
+
+        }
+
+        private void textBox_tipo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
-}
+    }

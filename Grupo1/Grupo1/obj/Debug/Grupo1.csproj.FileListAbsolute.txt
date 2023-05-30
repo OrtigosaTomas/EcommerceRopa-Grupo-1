@@ -127,3 +127,125 @@ C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\ob
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.exe
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.pdb
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Properties.Form4.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\Grupo1.exe.config
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\Grupo1.exe
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\Grupo1.pdb
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\Google.Protobuf.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\MySql.Data.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.Buffers.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.IO.Pipelines.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.Memory.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\Google.Protobuf.pdb
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\Google.Protobuf.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\MySql.Data.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.Buffers.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.IO.Pipelines.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.Memory.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.AssemblyReference.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.SuggestedBindingRedirects.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.Form1.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.Form2.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.Form3.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.Properties.Form4.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.Properties.Resources.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.GenerateResource.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.CoreCompileInputs.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.CopyComplete
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.exe
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.pdb
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\Grupo1.exe.config
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\Grupo1.exe
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\Grupo1.pdb
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\Google.Protobuf.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\MySql.Data.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.Buffers.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.IO.Pipelines.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.Memory.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\Google.Protobuf.pdb
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\Google.Protobuf.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\MySql.Data.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.Buffers.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.IO.Pipelines.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.Memory.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.AssemblyReference.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.SuggestedBindingRedirects.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.Form1.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.Form2.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.Form3.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.Properties.Form4.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.Properties.Resources.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.GenerateResource.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.CoreCompileInputs.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.CopyComplete
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.exe
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia\Grupo1\Grupo1\obj\Debug\Grupo1.pdb
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\Grupo1.exe.config
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\Grupo1.exe
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\Grupo1.pdb
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\Google.Protobuf.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\MySql.Data.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.Buffers.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.IO.Pipelines.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.Memory.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\Google.Protobuf.pdb
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\Google.Protobuf.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\MySql.Data.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.Buffers.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.IO.Pipelines.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.Memory.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.AssemblyReference.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.SuggestedBindingRedirects.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.Form1.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.Form2.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.Form3.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.Properties.Form4.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.Properties.Resources.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.GenerateResource.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.CoreCompileInputs.cache
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.csproj.CopyComplete
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.exe
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.pdb
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.Home.resources
+C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.Form5.resources

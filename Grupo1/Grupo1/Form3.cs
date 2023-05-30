@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Grupo1.Properties;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,13 @@ namespace Grupo1
         {
             InitializeComponent();
         }
+
+
+        public static class GlobalVariables
+        {
+            public static string Usuario { get; set; }
+        }
+
 
         private bool login(string username, string password)
         {
@@ -47,16 +55,13 @@ namespace Grupo1
             }
         }
 
-
      
-
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
        
-        
         private void button2_Click(object sender, EventArgs e)
         {
             {
@@ -65,12 +70,22 @@ namespace Grupo1
                     string username = textBox1.Text.Trim();
                     string password = textBox2.Text.Trim();
 
+
+
+
+                    
                     if (login(username, password))
                     {
                         MessageBox.Show("Inicio de sesión exitoso", "Éxito");
                         Hide();
-                        Form1 form1 = new Form1();  
-                        form1.Show();
+                        Home home = new Home();  
+                        home.Show();
+
+                    
+
+                        GlobalVariables.Usuario = textBox1.Text;
+                        
+
                     }
                     else
                     {
@@ -101,6 +116,10 @@ namespace Grupo1
             return true;
         }
 
+        internal void SetUsername(object username)
+        {
+            throw new NotImplementedException();
+        }
     }
     }
 

@@ -48,14 +48,12 @@
             this.radMinimal = new System.Windows.Forms.RadioButton();
             this.radRunning = new System.Windows.Forms.RadioButton();
             this.radTenis = new System.Windows.Forms.RadioButton();
-            this.labelBuscar = new System.Windows.Forms.Label();
-            this.tboxNombre = new System.Windows.Forms.TextBox();
-            this.txtBoxTipo = new System.Windows.Forms.TextBox();
-            this.txtBoxPrecio = new System.Windows.Forms.TextBox();
-            this.labelNombre = new System.Windows.Forms.Label();
-            this.labelTipo = new System.Windows.Forms.Label();
-            this.labelPrecio = new System.Windows.Forms.Label();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox_nombre = new System.Windows.Forms.TextBox();
+            this.textBox_tipo = new System.Windows.Forms.TextBox();
+            this.textBox_detalle = new System.Windows.Forms.TextBox();
+            this.textBox_precio = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgIndumentaria)).BeginInit();
             this.gbGorras.SuspendLayout();
             this.gbGenero.SuspendLayout();
@@ -100,6 +98,7 @@
             this.radCurvas.TabStop = true;
             this.radCurvas.Text = "Curvas";
             this.radCurvas.UseVisualStyleBackColor = true;
+            this.radCurvas.CheckedChanged += new System.EventHandler(this.radCurvas_CheckedChanged);
             // 
             // radPlanas
             // 
@@ -153,12 +152,13 @@
             this.colTipo,
             this.colDetalle,
             this.colPrecio});
-            this.dgIndumentaria.Location = new System.Drawing.Point(218, 61);
+            this.dgIndumentaria.Location = new System.Drawing.Point(218, 27);
             this.dgIndumentaria.Name = "dgIndumentaria";
             this.dgIndumentaria.RowHeadersWidth = 51;
             this.dgIndumentaria.RowTemplate.Height = 24;
-            this.dgIndumentaria.Size = new System.Drawing.Size(781, 551);
+            this.dgIndumentaria.Size = new System.Drawing.Size(781, 585);
             this.dgIndumentaria.TabIndex = 8;
+            this.dgIndumentaria.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgIndumentaria_CellClick);
             // 
             // colNombre
             // 
@@ -272,87 +272,67 @@
             this.radTenis.Text = "Tenis";
             this.radTenis.UseVisualStyleBackColor = true;
             // 
-            // labelBuscar
+            // btnEdit
             // 
-            this.labelBuscar.AutoSize = true;
-            this.labelBuscar.Location = new System.Drawing.Point(215, 8);
-            this.labelBuscar.Name = "labelBuscar";
-            this.labelBuscar.Size = new System.Drawing.Size(75, 16);
-            this.labelBuscar.TabIndex = 11;
-            this.labelBuscar.Text = "Buscar por:";
+            this.btnEdit.Location = new System.Drawing.Point(1029, 469);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(110, 34);
+            this.btnEdit.TabIndex = 11;
+            this.btnEdit.Text = "Editar";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // tboxNombre
+            // label2
             // 
-            this.tboxNombre.Location = new System.Drawing.Point(315, 27);
-            this.tboxNombre.Name = "tboxNombre";
-            this.tboxNombre.Size = new System.Drawing.Size(98, 22);
-            this.tboxNombre.TabIndex = 12;
-            this.tboxNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(1029, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(44, 16);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "label2";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txtBoxTipo
+            // textBox_nombre
             // 
-            this.txtBoxTipo.Location = new System.Drawing.Point(450, 27);
-            this.txtBoxTipo.Name = "txtBoxTipo";
-            this.txtBoxTipo.Size = new System.Drawing.Size(98, 22);
-            this.txtBoxTipo.TabIndex = 13;
+            this.textBox_nombre.Location = new System.Drawing.Point(1032, 71);
+            this.textBox_nombre.Name = "textBox_nombre";
+            this.textBox_nombre.Size = new System.Drawing.Size(193, 22);
+            this.textBox_nombre.TabIndex = 13;
+            this.textBox_nombre.TextChanged += new System.EventHandler(this.textBox_nombre_TextChanged);
             // 
-            // txtBoxPrecio
+            // textBox_tipo
             // 
-            this.txtBoxPrecio.Location = new System.Drawing.Point(585, 27);
-            this.txtBoxPrecio.Name = "txtBoxPrecio";
-            this.txtBoxPrecio.Size = new System.Drawing.Size(98, 22);
-            this.txtBoxPrecio.TabIndex = 14;
+            this.textBox_tipo.Location = new System.Drawing.Point(1032, 132);
+            this.textBox_tipo.Name = "textBox_tipo";
+            this.textBox_tipo.Size = new System.Drawing.Size(193, 22);
+            this.textBox_tipo.TabIndex = 14;
+            this.textBox_tipo.TextChanged += new System.EventHandler(this.textBox_tipo_TextChanged);
             // 
-            // labelNombre
+            // textBox_detalle
             // 
-            this.labelNombre.AutoSize = true;
-            this.labelNombre.Location = new System.Drawing.Point(335, 9);
-            this.labelNombre.Name = "labelNombre";
-            this.labelNombre.Size = new System.Drawing.Size(59, 16);
-            this.labelNombre.TabIndex = 15;
-            this.labelNombre.Text = "Nombre:";
+            this.textBox_detalle.Location = new System.Drawing.Point(1032, 198);
+            this.textBox_detalle.Name = "textBox_detalle";
+            this.textBox_detalle.Size = new System.Drawing.Size(193, 22);
+            this.textBox_detalle.TabIndex = 15;
             // 
-            // labelTipo
+            // textBox_precio
             // 
-            this.labelTipo.AutoSize = true;
-            this.labelTipo.Location = new System.Drawing.Point(480, 8);
-            this.labelTipo.Name = "labelTipo";
-            this.labelTipo.Size = new System.Drawing.Size(38, 16);
-            this.labelTipo.TabIndex = 16;
-            this.labelTipo.Text = "Tipo:";
-            // 
-            // labelPrecio
-            // 
-            this.labelPrecio.AutoSize = true;
-            this.labelPrecio.Location = new System.Drawing.Point(613, 8);
-            this.labelPrecio.Name = "labelPrecio";
-            this.labelPrecio.Size = new System.Drawing.Size(49, 16);
-            this.labelPrecio.TabIndex = 17;
-            this.labelPrecio.Text = "Precio:";
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.Location = new System.Drawing.Point(700, 12);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(116, 37);
-            this.btnBuscar.TabIndex = 18;
-            this.btnBuscar.Text = "Buscar";
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            this.textBox_precio.Location = new System.Drawing.Point(1032, 264);
+            this.textBox_precio.Name = "textBox_precio";
+            this.textBox_precio.Size = new System.Drawing.Size(193, 22);
+            this.textBox_precio.TabIndex = 16;
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1011, 641);
-            this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.labelPrecio);
-            this.Controls.Add(this.labelTipo);
-            this.Controls.Add(this.labelNombre);
-            this.Controls.Add(this.txtBoxPrecio);
-            this.Controls.Add(this.txtBoxTipo);
-            this.Controls.Add(this.tboxNombre);
-            this.Controls.Add(this.labelBuscar);
+            this.ClientSize = new System.Drawing.Size(1251, 641);
+            this.Controls.Add(this.textBox_precio);
+            this.Controls.Add(this.textBox_detalle);
+            this.Controls.Add(this.textBox_tipo);
+            this.Controls.Add(this.textBox_nombre);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.gbGenero);
             this.Controls.Add(this.gbGorras);
             this.Controls.Add(this.dgIndumentaria);
@@ -393,13 +373,11 @@
         private System.Windows.Forms.RadioButton radTenis;
         private System.Windows.Forms.RadioButton radSinFg;
         private System.Windows.Forms.RadioButton radSinFz;
-        private System.Windows.Forms.Label labelBuscar;
-        private System.Windows.Forms.TextBox tboxNombre;
-        private System.Windows.Forms.TextBox txtBoxTipo;
-        private System.Windows.Forms.TextBox txtBoxPrecio;
-        private System.Windows.Forms.Label labelNombre;
-        private System.Windows.Forms.Label labelTipo;
-        private System.Windows.Forms.Label labelPrecio;
-        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox_nombre;
+        private System.Windows.Forms.TextBox textBox_tipo;
+        private System.Windows.Forms.TextBox textBox_detalle;
+        private System.Windows.Forms.TextBox textBox_precio;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Grupo1.Modelos;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,53 +13,58 @@ namespace Grupo1.Controlador
     public class Zapatilla_Controlador
     {
 
-        public static string ruta = "../../Resources/zapatillas.txt";
-        public int getLastId()
-        {
-            StreamReader archivo = new StreamReader(ruta);
-            int lastId = 1;
-            while (!archivo.EndOfStream)
+      
 
-
-            {
-                string zapatilla = archivo.ReadLine();
-                Zapatilla zap = new Zapatilla(zapatilla);
-                lastId = zap.Id;
-            }
-            archivo.Close();
-
-            return lastId +1;
-        }
         public bool crearZapatilla(Zapatilla zap)
         {
 
-            try {
+                try
+                {
+                    string server = "localhost";
+                    string database = "mydb";
+                    string user = "root";
+                    string pass = "";
+                    string cadenaConexion = "server=" + server + ";database=" + database + ";" + "Uid=" + user + ";" + "pwd=" + pass + ";";
 
-                String linea = zap.Id + ";" + zap.Nombre + ";" + zap.Precio + ";" +zap.Descripcion;
-                StreamWriter archivo = new StreamWriter(ruta, true);
-                archivo.WriteLine(linea);
-                archivo.Close();
+                    using (MySqlConnection myCon = new MySqlConnection(cadenaConexion))
+                    {
+                        myCon.Open();
+
+                        using (MySqlCommand cmd = new MySqlCommand("INSERT INTO indumentaria (id, nombre, tipo, detalle, precio, genero_id, categoria_id, talle_id, stock_id) VALUES (@id, @nombre, @tipo, @detalle, @precio, @genero, @categoria, @talle, @stock)", myCon))
+                        {
+                        cmd.Parameters.AddWithValue("@id", zap.Id);
+                        cmd.Parameters.AddWithValue("@nombre", zap.Nombre);
+                        cmd.Parameters.AddWithValue("@tipo", zap.Tipo);
+                        cmd.Parameters.AddWithValue("@detalle", zap.Detalle);
+                        cmd.Parameters.AddWithValue("@precio", zap.Precio);
+                        cmd.Parameters.AddWithValue("@genero", zap.Genero_id);
+                        cmd.Parameters.AddWithValue("@categoria", zap.Categoria_id);
+                        cmd.Parameters.AddWithValue("@talle", zap.Talle_id);
+                        cmd.Parameters.AddWithValue("@stock", zap.Stock_id);
+
+
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                            return rowsAffected > 0;
+                        }
+                    }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                Trace.WriteLine("Ocurrio un error"+ex.ToString());
+                // Handle exception
+                return false;
             }
-            return true;
+
+
+
+
         }
 
 
      
 
-        public bool eliminarZapatilla(Zapatilla zap)
-        {
-            return true;
-        }
-        public bool editarZapatilla(Zapatilla zap)
-        {
-            return true;
-        }
-
-
+ 
         public Zapatilla getOne(int id)
         {
             return new Zapatilla();
