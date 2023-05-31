@@ -19,11 +19,13 @@ namespace Grupo1.Properties
     {
 
         MySqlConnection myCon;
-        String query;
+        String query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE 1";
 
         public Form4()
         {
             InitializeComponent();
+            Conectar();
+            EjecutarQuery();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -58,7 +60,6 @@ namespace Grupo1.Properties
         }
 
         private void EjecutarQuery() {
-            Conectar();
             MySqlCommand comandoDB = new MySqlCommand(query, myCon);
             comandoDB.CommandTimeout = 60;
             MySqlDataReader reader;
@@ -74,10 +75,12 @@ namespace Grupo1.Properties
                         dgIndumentaria.Rows[n].Cells[2].Value = reader.GetString(2);
                         dgIndumentaria.Rows[n].Cells[3].Value = reader.GetString(3);
                     }
+                    reader.Close();
                 }
                 else
                 {
                     Console.WriteLine("no hay indumentaria");
+                    reader.Close();
                 }
             }
             catch (Exception ex) {
@@ -204,7 +207,9 @@ namespace Grupo1.Properties
 
                         return rowsAffected > 0;
                     }
+
                 }
+
             }
             catch (Exception error)
             {
@@ -228,10 +233,6 @@ namespace Grupo1.Properties
                 using (MySqlConnection myCon = new MySqlConnection(cadenaConexion))
                 {
                     myCon.Open();
-
-
-
-
 
                     using (MySqlCommand cmd = new MySqlCommand("SELECT `rol` FROM `cliente` WHERE `usuario` = @usuario ", myCon))
                     {
@@ -258,7 +259,6 @@ namespace Grupo1.Properties
                                 int rol = reader.GetInt32(0);
 
 
-
                                 if (rol == 0)
                                 {
                                   
@@ -282,15 +282,14 @@ namespace Grupo1.Properties
 
                                     MessageBox.Show("Editado correctamente");
                                     EjecutarQuery();
-
+                                   
                                 }
-
 
                             }
 
-
                         }
                     }
+
                 }
             }
             catch (Exception error)
@@ -326,5 +325,35 @@ namespace Grupo1.Properties
         {
 
         }
+
+        private void txtboxPrecio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            string where = "where 1 = 1";
+            if (txtboxNombre.Text != "")
+            {
+                where = where + " AND nombre like \"%" + txtboxNombre.Text + "%\"; ";
+            }
+            if (txtboxTipo.Text != "")
+            {
+                where = where + " AND tipo like \"%" + txtboxTipo.Text + "%\"; ";
+            }
+            if (txtboxPrecio.Text != "")
+            {
+                where = where + " AND precio like \"%" + txtboxPrecio.Text + "%\"; ";
+            }
+            query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria`" + where;
+            EjecutarQuery();
+        }
+
+        private void cerrarCon()
+        {
+            myCon.Close();
+        }
+
     }
     }
