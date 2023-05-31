@@ -33,12 +33,6 @@ namespace Grupo1.Properties
 
         }
 
-
-
-
-      
-
-
         private void Conectar()
         {
             try
@@ -298,17 +292,9 @@ namespace Grupo1.Properties
 
             }
 
-
-
-
-
-
-
                 //   DataGridViewRow newDataRow = dgIndumentaria.Rows[indexRow];
                 // newDataRow.Cells[0].Value = textBox_nombre.Text;
 
-             
-                
             }
 
         private void textBox_nombre_TextChanged(object sender, EventArgs e)
