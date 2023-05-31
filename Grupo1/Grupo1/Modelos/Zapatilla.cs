@@ -12,40 +12,37 @@ namespace Grupo1.Modelos
       
 
         public int Id { set; get; }
-
         public string Nombre { set; get; }
-
-        public string Descripcion { set; get; } 
-
-        public string img { set; get; }
-
+          public string Tipo { set; get; }    
+        public string Detalle { set; get; }
+        public int Genero_id { set; get; }
+        public int Categoria_id { set; get; }
+        public int Talle_id { set; get; }
+        public int Stock_id { set; get; }
         public int Precio { set; get; }
-
-        //public int TipoZapatilla;
-
-        //public int GeneroZapatilla;
-
-        public Zapatilla(){}
-
-        public Zapatilla(int id, string nombre, string descripcion, int precio /* int tipo, int genero */) 
+        public Zapatilla()
         {
-            Id=id;
-            Nombre=nombre;
-            Descripcion=descripcion;
-            Precio=precio;
-            //TipoZapatilla = tipo.ToString();
-            //GeneroZapatilla = genero.ToString();
         }
+        public Zapatilla(int id, string nombre, string tipo, string detalle, int precio, int genero_id, int categoria_id, int talle_id, int stock_id) 
+        {
+              Id=id;
+           Nombre=nombre;
+            Tipo = tipo;
+            Detalle = detalle;
+            Precio = precio;
+            Genero_id = genero_id;
+            Categoria_id = categoria_id;
+            Talle_id = talle_id;
+            Stock_id = stock_id;
+
+        }      
+
       
 
         public Zapatilla(String line) { 
-
-            string[] datos = line.Split(';');
-            Id= int.Parse(datos[0]);    
-            Nombre = datos[1];
-            Precio = int.Parse(datos[2]);
-            Descripcion = datos[3];
+  
      
+        
         }
 
         
