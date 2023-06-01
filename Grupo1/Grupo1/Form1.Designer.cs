@@ -32,10 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.boton_crear = new System.Windows.Forms.Button();
-            this.txt_id = new System.Windows.Forms.TextBox();
-            this.txt_precio = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.txt_tipo = new System.Windows.Forms.TextBox();
             this.txt_detalle = new System.Windows.Forms.TextBox();
             this.txt_stockid = new System.Windows.Forms.TextBox();
             this.generoBox = new System.Windows.Forms.ComboBox();
@@ -46,9 +43,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.txt_precio = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -80,24 +76,6 @@
             this.boton_crear.UseVisualStyleBackColor = true;
             this.boton_crear.Click += new System.EventHandler(this.boton_crear_Click);
             // 
-            // txt_id
-            // 
-            this.txt_id.Location = new System.Drawing.Point(44, 191);
-            this.txt_id.Name = "txt_id";
-            this.txt_id.Size = new System.Drawing.Size(158, 22);
-            this.txt_id.TabIndex = 4;
-            this.txt_id.Text = "Ingrese ID";
-            this.txt_id.TextChanged += new System.EventHandler(this.txt_id_TextChanged);
-            // 
-            // txt_precio
-            // 
-            this.txt_precio.Location = new System.Drawing.Point(46, 245);
-            this.txt_precio.Name = "txt_precio";
-            this.txt_precio.Size = new System.Drawing.Size(156, 22);
-            this.txt_precio.TabIndex = 5;
-            this.txt_precio.Text = "Ingrese precio";
-            this.txt_precio.TextChanged += new System.EventHandler(this.txt_precio_TextChanged);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(44, 386);
@@ -107,15 +85,6 @@
             this.button1.Text = "VER PRODUCTOS";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txt_tipo
-            // 
-            this.txt_tipo.Location = new System.Drawing.Point(46, 298);
-            this.txt_tipo.Name = "txt_tipo";
-            this.txt_tipo.Size = new System.Drawing.Size(156, 22);
-            this.txt_tipo.TabIndex = 8;
-            this.txt_tipo.Text = "Ingrese Tipo";
-            this.txt_tipo.TextChanged += new System.EventHandler(this.txt_tipo_TextChanged);
             // 
             // txt_detalle
             // 
@@ -225,16 +194,6 @@
             this.label6.Text = "Ingrese un detalle";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(41, 170);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 16);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Seleccione el id";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -245,24 +204,21 @@
             this.label8.Text = "Ingrese un precio";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label9
+            // txt_precio
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(41, 279);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 16);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Ingrese un tipo";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.txt_precio.Location = new System.Drawing.Point(46, 245);
+            this.txt_precio.Name = "txt_precio";
+            this.txt_precio.Size = new System.Drawing.Size(156, 22);
+            this.txt_precio.TabIndex = 5;
+            this.txt_precio.Text = "Ingrese precio";
+            this.txt_precio.TextChanged += new System.EventHandler(this.txt_precio_TextChanged);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 503);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -273,10 +229,8 @@
             this.Controls.Add(this.generoBox);
             this.Controls.Add(this.txt_stockid);
             this.Controls.Add(this.txt_detalle);
-            this.Controls.Add(this.txt_tipo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_precio);
-            this.Controls.Add(this.txt_id);
             this.Controls.Add(this.boton_crear);
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.label1);
@@ -293,10 +247,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Button boton_crear;
-        private System.Windows.Forms.TextBox txt_id;
-        private System.Windows.Forms.TextBox txt_precio;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txt_tipo;
         private System.Windows.Forms.TextBox txt_detalle;
         private System.Windows.Forms.TextBox txt_stockid;
         private System.Windows.Forms.ComboBox generoBox;
@@ -307,9 +258,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_precio;
     }
 }
 

@@ -71,7 +71,7 @@ namespace Grupo1
 
                 gor_nueva.Nombre = txt_nombre1.Text;
 
-                gor_nueva.Tipo = txt_tipo1.Text;
+                gor_nueva.Tipo = "gorra";
 
                 gor_nueva.Detalle = txt_detalle1.Text;
 
@@ -84,32 +84,32 @@ namespace Grupo1
 
                 if (talleBox2.SelectedItem.ToString() == "10")
                 {
-                    gor_nueva.Talle_id = 1;
+                    gor_nueva.Talle = 1;
                 }
                 else if (talleBox2.SelectedItem.ToString() == "20")
                 {
 
-                    gor_nueva.Talle_id = 2;
+                    gor_nueva.Talle = 2;
                 }
                 else if (talleBox2.SelectedItem.ToString() == "30")
                 {
 
-                    gor_nueva.Talle_id = 3;
+                    gor_nueva.Talle = 3;
                 }
                 else if (talleBox2.SelectedItem.ToString() == "40")
                 {
 
-                    gor_nueva.Talle_id = 4;
+                    gor_nueva.Talle = 4;
                 }
                 else if (talleBox2.SelectedItem.ToString() == "50")
                 {
 
-                    gor_nueva.Talle_id = 5;
+                    gor_nueva.Talle = 5;
                 }
                 else if (talleBox2.SelectedItem.ToString() == "60")
                 {
 
-                    gor_nueva.Talle_id = 6;
+                    gor_nueva.Talle = 6;
                 }
 
 
@@ -120,22 +120,22 @@ namespace Grupo1
 
                 if (categoriaBox1.SelectedItem.ToString() == "Piluso")
                 {
-                    gor_nueva.Categoria_id = 3;
+                    gor_nueva.Categoria_id = 1;
                 }
                 else if (categoriaBox1.SelectedItem.ToString() == "Plana")
                 {
 
-                    gor_nueva.Categoria_id = 5;
+                    gor_nueva.Categoria_id = 2;
                 }
                 else if (categoriaBox1.SelectedItem.ToString() == "Curva")
                 {
 
-                    gor_nueva.Categoria_id = 6;
+                    gor_nueva.Categoria_id = 3;
                 }
 
 
 
-                gor_nueva.Stock_id = int.Parse(txt_stockid1.Text);
+                gor_nueva.Stock = int.Parse(txt_stockid1.Text);
 
 
                 Trace.WriteLine("1");
@@ -229,6 +229,21 @@ namespace Grupo1
         }
 
         private void generoBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_precio1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_stockid1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txt_nombre1_TextChanged(object sender, EventArgs e)
         {
 
         }

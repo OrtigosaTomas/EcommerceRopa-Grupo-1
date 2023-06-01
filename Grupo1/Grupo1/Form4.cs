@@ -341,5 +341,12 @@ namespace Grupo1.Properties
             myCon.Close();
         }
 
+<<<<<<< Updated upstream
+=======
+        private void txtboxNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> Stashed changes
     }
     }

@@ -30,9 +30,7 @@ namespace Grupo1
         /// </summary>
         private void InitializeComponent()
         {
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,24 +38,13 @@ namespace Grupo1
             this.categoriaBox1 = new System.Windows.Forms.ComboBox();
             this.txt_stockid1 = new System.Windows.Forms.TextBox();
             this.txt_detalle1 = new System.Windows.Forms.TextBox();
-            this.txt_tipo1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txt_precio1 = new System.Windows.Forms.TextBox();
-            this.txt_id1 = new System.Windows.Forms.TextBox();
             this.boton_crear1 = new System.Windows.Forms.Button();
             this.txt_nombre1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.talleBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(66, 309);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(94, 16);
-            this.label9.TabIndex = 44;
-            this.label9.Text = "Ingrese un tipo";
             // 
             // label8
             // 
@@ -67,15 +54,6 @@ namespace Grupo1
             this.label8.Size = new System.Drawing.Size(110, 16);
             this.label8.TabIndex = 43;
             this.label8.Text = "Ingrese un precio";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(66, 200);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 16);
-            this.label7.TabIndex = 42;
-            this.label7.Text = "Seleccione el id";
             // 
             // label6
             // 
@@ -132,6 +110,7 @@ namespace Grupo1
             this.txt_stockid1.Size = new System.Drawing.Size(110, 22);
             this.txt_stockid1.TabIndex = 33;
             this.txt_stockid1.Text = "stock id";
+            this.txt_stockid1.TextChanged += new System.EventHandler(this.txt_stockid1_TextChanged);
             // 
             // txt_detalle1
             // 
@@ -140,14 +119,6 @@ namespace Grupo1
             this.txt_detalle1.Size = new System.Drawing.Size(156, 22);
             this.txt_detalle1.TabIndex = 32;
             this.txt_detalle1.Text = "Ingrese Detalle";
-            // 
-            // txt_tipo1
-            // 
-            this.txt_tipo1.Location = new System.Drawing.Point(71, 328);
-            this.txt_tipo1.Name = "txt_tipo1";
-            this.txt_tipo1.Size = new System.Drawing.Size(156, 22);
-            this.txt_tipo1.TabIndex = 31;
-            this.txt_tipo1.Text = "Ingrese Tipo";
             // 
             // button1
             // 
@@ -166,14 +137,7 @@ namespace Grupo1
             this.txt_precio1.Size = new System.Drawing.Size(156, 22);
             this.txt_precio1.TabIndex = 29;
             this.txt_precio1.Text = "Ingrese precio";
-            // 
-            // txt_id1
-            // 
-            this.txt_id1.Location = new System.Drawing.Point(69, 221);
-            this.txt_id1.Name = "txt_id1";
-            this.txt_id1.Size = new System.Drawing.Size(158, 22);
-            this.txt_id1.TabIndex = 28;
-            this.txt_id1.Text = "Ingrese ID";
+            this.txt_precio1.TextChanged += new System.EventHandler(this.txt_precio1_TextChanged);
             // 
             // boton_crear1
             // 
@@ -192,15 +156,16 @@ namespace Grupo1
             this.txt_nombre1.Size = new System.Drawing.Size(158, 22);
             this.txt_nombre1.TabIndex = 26;
             this.txt_nombre1.Text = "Ingrese Nombre";
+            this.txt_nombre1.TextChanged += new System.EventHandler(this.txt_nombre1_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(69, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 16);
+            this.label1.Size = new System.Drawing.Size(140, 16);
             this.label1.TabIndex = 25;
-            this.label1.Text = "Crear una nueva zapatilla";
+            this.label1.Text = "Crear una nueva gorra";
             // 
             // talleBox2
             // 
@@ -224,9 +189,7 @@ namespace Grupo1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(479, 506);
             this.Controls.Add(this.talleBox2);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -234,10 +197,8 @@ namespace Grupo1
             this.Controls.Add(this.categoriaBox1);
             this.Controls.Add(this.txt_stockid1);
             this.Controls.Add(this.txt_detalle1);
-            this.Controls.Add(this.txt_tipo1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_precio1);
-            this.Controls.Add(this.txt_id1);
             this.Controls.Add(this.boton_crear1);
             this.Controls.Add(this.txt_nombre1);
             this.Controls.Add(this.label1);
@@ -254,10 +215,7 @@ namespace Grupo1
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -265,10 +223,8 @@ namespace Grupo1
         private System.Windows.Forms.ComboBox categoriaBox1;
         private System.Windows.Forms.TextBox txt_stockid1;
         private System.Windows.Forms.TextBox txt_detalle1;
-        private System.Windows.Forms.TextBox txt_tipo1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txt_precio1;
-        private System.Windows.Forms.TextBox txt_id1;
         private System.Windows.Forms.Button boton_crear1;
         private System.Windows.Forms.TextBox txt_nombre1;
         private System.Windows.Forms.Label label1;
