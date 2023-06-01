@@ -251,8 +251,6 @@ C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2
 C:\Users\bruno\OneDrive\Escritorio\EcommerceRopa-Grupo-1-main - copia - copia (2)\Grupo1\Grupo1\obj\Debug\Grupo1.Form5.resources
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Form5.resources
 C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Home.resources
-<<<<<<< Updated upstream
-=======
 C:\Users\bruno\OneDrive\Escritorio\Nueva carpeta\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\Grupo1.exe.config
 C:\Users\bruno\OneDrive\Escritorio\Nueva carpeta\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\Grupo1.exe
 C:\Users\bruno\OneDrive\Escritorio\Nueva carpeta\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\bin\Debug\Grupo1.pdb
@@ -296,4 +294,3 @@ C:\Users\bruno\OneDrive\Escritorio\Nueva carpeta\EcommerceRopa-Grupo-1-main\Grup
 C:\Users\bruno\OneDrive\Escritorio\Nueva carpeta\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.exe
 C:\Users\bruno\OneDrive\Escritorio\Nueva carpeta\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.pdb
 C:\Users\bruno\OneDrive\Escritorio\Nueva carpeta\EcommerceRopa-Grupo-1-main\Grupo1\Grupo1\obj\Debug\Grupo1.Ventas.resources
->>>>>>> Stashed changes
