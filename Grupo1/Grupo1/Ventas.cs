@@ -3,6 +3,7 @@ using Grupo1.Modelos;
 using MySql.Data.MySqlClient;
 using Org.BouncyCastle.Utilities.Collections;
 using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Grupo1.Form3;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -260,17 +262,46 @@ namespace Grupo1
                 MySqlConnection myCon = new MySqlConnection(cadenaConexion);
                 myCon.Open();
 
+
+                string usuario = GlobalVariables.Usuario;
+                int usuarioid = 0;
+                using (MySqlCommand cmd2 = new MySqlCommand("SELECT id FROM cliente WHERE usuario = @usuario", myCon))
+                {
+                    cmd2.Parameters.AddWithValue("@usuario", usuario);
+                    using (MySqlDataReader reader = cmd2.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            usuarioid = reader.GetInt32(0);
+                        }
+                    }
+                }
+
                 MySqlCommand cmd = new MySqlCommand("SELECT MAX(idventas) FROM ventas", myCon);
                 int lastId = Convert.ToInt32(cmd.ExecuteScalar());
 
                 Venta venta_nueva = new Venta();
                 venta_nueva.Id = lastId + 1;
-                venta_nueva.Cliente_id = int.Parse(txtBox_idCliente.Text);
+                venta_nueva.Cliente_id = usuarioid;
                 venta_nueva.Fecha = (txtBox_fecha.Text);
                 venta_nueva.Total = double.Parse(txtTotal.Text);
                 ventaController.crearVenta(venta_nueva);
 
-             
+                string path = @"C:\Users\bruno\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\Ventas\factura.txt";
+                using (StreamWriter sw = new StreamWriter(path))
+                {
+                    sw.WriteLine("Fecha: " + venta_nueva.Fecha);
+                    sw.WriteLine("Cliente ID: " + venta_nueva.Cliente_id);
+                    
+                    foreach (DataGridViewRow row in dataGridView1.Rows)
+                    {
+                        int idProducto = Convert.ToInt32(row.Cells["IdProducto"].Value);
+                        int cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value);
+                        sw.WriteLine("Producto ID: " + idProducto + ", Cantidad: " + cantidad );
+                    }
+                    sw.WriteLine("Total: " + txtTotal.Text);
+
+                }
 
 
                 foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -284,6 +315,17 @@ namespace Grupo1
                         cmd1.Parameters.AddWithValue("@idproducto", idProducto);
                         cmd1.ExecuteNonQuery();
                     }
+
+
+                    using (MySqlCommand cmd2 = new MySqlCommand("INSERT INTO indumentaria_has_ventas (indumentaria_id, ventas_id, cantidad) VALUES (@idproducto, @idventa, @cantidad)", myCon))
+                    {
+                        cmd2.Parameters.AddWithValue("@idproducto", idProducto);
+                        cmd2.Parameters.AddWithValue("@idventa", venta_nueva.Id);
+                        cmd2.Parameters.AddWithValue("@cantidad", cantidad);
+                        cmd2.ExecuteNonQuery();
+                    }
+
+
                 }
 
                 myCon.Close();
