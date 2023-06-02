@@ -34,7 +34,7 @@ namespace Grupo1.Controlador
                     myCon.Open();
 
                     Trace.WriteLine("error1");
-                    using (MySqlCommand cmd = new MySqlCommand("INSERT INTO indumentaria (id, nombre, tipo, detalle, precio, genero_id, categoria_id, talle_id, stock_id) VALUES (@id, @nombre, @tipo, @detalle, @precio, @genero, @categoria, @talle, @stock)", myCon))
+                    using (MySqlCommand cmd = new MySqlCommand("INSERT INTO indumentaria (id, nombre, tipo, detalle, precio, genero_id, categoria_id, talle, stock) VALUES (@id, @nombre, @tipo, @detalle, @precio, @genero, @categoria, @talle, @stock)", myCon))
                     {
                         cmd.Parameters.AddWithValue("@id", gor.Id);
                         cmd.Parameters.AddWithValue("@nombre", gor.Nombre);
@@ -43,8 +43,8 @@ namespace Grupo1.Controlador
                         cmd.Parameters.AddWithValue("@precio", gor.Precio);
                         cmd.Parameters.AddWithValue("@genero", gor.Genero_id);
                         cmd.Parameters.AddWithValue("@categoria", gor.Categoria_id);
-                        cmd.Parameters.AddWithValue("@talle", gor.Talle_id);
-                        cmd.Parameters.AddWithValue("@stock", gor.Stock_id);
+                        cmd.Parameters.AddWithValue("@talle", gor.Talle);
+                        cmd.Parameters.AddWithValue("@stock", gor.Stock);
 
 
                         

@@ -1,0 +1,106 @@
+
+// inserts categoria //
+
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('1','piluso');
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('2','plana');
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('3','curva');
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('4','tenis');
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('5','running');
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('6','minimalista');
+
+// inserts genero //
+
+INSERT INTO `genero`(`idgenero`, `genero`) VALUES ('1','hombre');
+INSERT INTO `genero`(`idgenero`, `genero`) VALUES ('2','mujer');
+INSERT INTO `genero`(`idgenero`, `genero`) VALUES ('3','unisex');
+
+// inserts stock (para testear) //
+
+INSERT INTO `stock`(`id`, `stock`) VALUES ('1','10');
+INSERT INTO `stock`(`id`, `stock`) VALUES ('2','100');
+INSERT INTO `stock`(`id`, `stock`) VALUES ('3','500');
+
+// inserts talle (para testear) //
+
+INSERT INTO `talle`(`id`, `numero`) VALUES ('1','10');
+INSERT INTO `talle`(`id`, `numero`) VALUES ('2','20');
+INSERT INTO `talle`(`id`, `numero`) VALUES ('3','30');
+INSERT INTO `talle`(`id`, `numero`) VALUES ('4','40');
+INSERT INTO `talle`(`id`, `numero`) VALUES ('5','50');
+
+// inserts indumentaria (para testear) //
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle_id`, `stock_id`) VALUES ('1','nike','zapatilla','muy linda','2000','1','4','1','1');
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle_id`, `stock_id`) VALUES ('2','adidas','zapatilla','muy buena','5000','2','5','5','2');
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle_id`, `stock_id`) VALUES ('3','puma','zapatilla','muy fachera','700','1','6','2','3');
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle_id`, `stock_id`) VALUES ('4','gorrin','gorra','muy bella','1000','3','1','3','1');
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle_id`, `stock_id`) VALUES ('5','gorron','gorra','muy comoda','500','3','2','2','2');
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle_id`, `stock_id`) VALUES ('6','gorrita','gorra','muy elegante','2000','3','3','1','3');
+
+// inserts cliente (para testear) //
+
+INSERT INTO `cliente`(`id`, `nombre`, `apellido`, `mail`, `usuario`, `contraseña`, `telefono`, `rol`) VALUES ('1','bruno','nose','bruno@gmail.com','bruni','123','12345678','0');
+INSERT INTO `cliente`(`id`, `nombre`, `apellido`, `mail`, `usuario`, `contraseña`, `telefono`, `rol`) VALUES ('2','fatima','nose','fatima@gmail.com','fati','123','12345678','1');
+INSERT INTO `cliente`(`id`, `nombre`, `apellido`, `mail`, `usuario`, `contraseña`, `telefono`, `rol`) VALUES ('3','tomas','ortigosa','ortigosatomas@gmail.com','tomi','123','12345678','1');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+BRUNO
+
+
+
+
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('1','piluso');
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('2','plana');
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('3','curva');
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('4','tenis');
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('5','running');
+INSERT INTO `categoria`(`id`, `categoria_nombre`) VALUES ('6','minimalista');
+
+INSERT INTO `genero`(`idgenero`, `genero`) VALUES ('1','hombre');
+INSERT INTO `genero`(`idgenero`, `genero`) VALUES ('2','mujer');
+INSERT INTO `genero`(`idgenero`, `genero`) VALUES ('3','unisex');
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle`, `stock`, `img`) VALUES ('1','nike','zapatilla','muy linda','2000','1','4','1','1','hola.png');
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle`, `stock`, `img`) VALUES ('2','adidas','zapatilla','muy buena','5000','2','5','5','2','hola.png');
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle`, `stock`, `img`) VALUES ('3','puma','zapatilla','muy fachera','700','1','6','2','3','hola.png');
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle`, `stock`, `img`) VALUES ('4','gorrin','gorra','muy bella','1000','3','1','3','1','hola.png');
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle`, `stock`, `img`) VALUES ('5','gorron','gorra','muy comoda','500','3','2','2','2','hola.png');
+
+INSERT INTO `indumentaria`(`id`, `nombre`, `tipo`, `detalle`, `precio`, `genero_id`, `categoria_id`, `talle`, `stock`, `img`) VALUES ('6','gorrita','gorra','muy elegante','2000','3','3','1','3','hola.png');
+
+
+
+INSERT INTO `cliente`(`id`, `nombre`, `apellido`, `mail`, `usuario`, `contraseña`, `telefono`, `rol`) VALUES ('1','bruno','nose','bruno@gmail.com','bruni','123','12345678','0');
+INSERT INTO `cliente`(`id`, `nombre`, `apellido`, `mail`, `usuario`, `contraseña`, `telefono`, `rol`) VALUES ('2','fatima','nose','fatima@gmail.com','fati','123','12345678','1');
+INSERT INTO `cliente`(`id`, `nombre`, `apellido`, `mail`, `usuario`, `contraseña`, `telefono`, `rol`) VALUES ('3','tomas','ortigosa','ortigosatomas@gmail.com','tomi','123','12345678','1');

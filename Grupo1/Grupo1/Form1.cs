@@ -72,7 +72,7 @@ namespace Grupo1
              
                 zap_nueva.Nombre = txt_nombre.Text;
                
-                zap_nueva.Tipo = txt_tipo.Text;
+                zap_nueva.Tipo = "zapatilla";
               
                 zap_nueva.Detalle = txt_detalle.Text;
             
@@ -94,27 +94,27 @@ namespace Grupo1
 
                 if (talleBox.SelectedItem.ToString() == "10")
                 {
-                    zap_nueva.Talle_id = 1;
+                    zap_nueva.Talle = 1;
                 }
                 else if (talleBox.SelectedItem.ToString() == "20")
                 {
 
-                    zap_nueva.Talle_id = 2;
+                    zap_nueva.Talle = 2;
                 }
                 else if (talleBox.SelectedItem.ToString() == "30")
                 {
 
-                    zap_nueva.Talle_id = 3;
+                    zap_nueva.Talle = 3;
                 }
                 else if (talleBox.SelectedItem.ToString() == "40")
                 {
 
-                    zap_nueva.Talle_id = 4;
+                    zap_nueva.Talle = 4;
                 }
                 else if (talleBox.SelectedItem.ToString() == "50")
                 {
 
-                    zap_nueva.Talle_id = 5;
+                    zap_nueva.Talle = 5;
                 }
 
 
@@ -139,7 +139,7 @@ namespace Grupo1
 
 
 
-                zap_nueva.Stock_id = int.Parse(txt_stockid.Text);
+                zap_nueva.Stock = int.Parse(txt_stockid.Text);
 
 
 

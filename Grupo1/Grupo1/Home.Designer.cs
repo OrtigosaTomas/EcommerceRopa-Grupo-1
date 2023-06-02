@@ -73,6 +73,7 @@
             this.realizarVentas.TabIndex = 3;
             this.realizarVentas.Text = "Realizar ventas";
             this.realizarVentas.UseVisualStyleBackColor = true;
+            this.realizarVentas.Click += new System.EventHandler(this.realizarVentas_Click);
             // 
             // button1
             // 

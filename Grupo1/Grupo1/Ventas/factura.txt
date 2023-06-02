@@ -1,0 +1,6 @@
+Fecha: 2000-08-05
+Cliente ID: 1
+Producto ID: 12, Cantidad: 6
+Producto ID: 11, Cantidad: 4
+Producto ID: 0, Cantidad: 0
+Total: 14000
