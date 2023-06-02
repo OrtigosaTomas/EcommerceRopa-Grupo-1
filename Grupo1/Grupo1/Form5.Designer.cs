@@ -46,6 +46,8 @@ namespace Grupo1
             this.talleBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtBox_img = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +56,7 @@ namespace Grupo1
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(23, 240);
+            this.label8.Location = new System.Drawing.Point(23, 188);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 25);
             this.label8.TabIndex = 43;
@@ -65,7 +67,7 @@ namespace Grupo1
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(25, 153);
+            this.label6.Location = new System.Drawing.Point(23, 127);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 25);
             this.label6.TabIndex = 41;
@@ -125,13 +127,12 @@ namespace Grupo1
             this.txt_stockid1.Name = "txt_stockid1";
             this.txt_stockid1.Size = new System.Drawing.Size(121, 30);
             this.txt_stockid1.TabIndex = 33;
-            this.txt_stockid1.Text = "stock id";
             this.txt_stockid1.TextChanged += new System.EventHandler(this.txt_stockid1_TextChanged);
             // 
             // txt_detalle1
             // 
             this.txt_detalle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_detalle1.Location = new System.Drawing.Point(28, 181);
+            this.txt_detalle1.Location = new System.Drawing.Point(28, 155);
             this.txt_detalle1.Name = "txt_detalle1";
             this.txt_detalle1.Size = new System.Drawing.Size(196, 30);
             this.txt_detalle1.TabIndex = 32;
@@ -153,11 +154,11 @@ namespace Grupo1
             // txt_precio1
             // 
             this.txt_precio1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precio1.Location = new System.Drawing.Point(28, 268);
+            this.txt_precio1.Location = new System.Drawing.Point(28, 216);
             this.txt_precio1.Name = "txt_precio1";
             this.txt_precio1.Size = new System.Drawing.Size(196, 30);
             this.txt_precio1.TabIndex = 29;
-            this.txt_precio1.Text = "Ingrese precio";
+            this.txt_precio1.Text = "Ingrese Precio";
             this.txt_precio1.TextChanged += new System.EventHandler(this.txt_precio1_TextChanged);
             // 
             // boton_crear1
@@ -203,6 +204,8 @@ namespace Grupo1
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gray;
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txtBox_img);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label8);
@@ -234,6 +237,27 @@ namespace Grupo1
             this.label1.Size = new System.Drawing.Size(289, 25);
             this.label1.TabIndex = 46;
             this.label1.Text = "Ingrese la cantidad de stock:";
+            // 
+            // txtBox_img
+            // 
+            this.txtBox_img.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_img.Location = new System.Drawing.Point(28, 279);
+            this.txtBox_img.Name = "txtBox_img";
+            this.txtBox_img.Size = new System.Drawing.Size(196, 30);
+            this.txtBox_img.TabIndex = 47;
+            this.txtBox_img.Text = "Ingrese Imagen";
+            this.txtBox_img.TextChanged += new System.EventHandler(this.txtBox_img_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(23, 251);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(83, 25);
+            this.label3.TabIndex = 48;
+            this.label3.Text = "Imagen";
             // 
             // Form5
             // 
@@ -274,5 +298,7 @@ namespace Grupo1
         private System.Windows.Forms.ComboBox talleBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBox_img;
+        private System.Windows.Forms.Label label3;
     }
 }

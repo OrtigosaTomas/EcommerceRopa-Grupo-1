@@ -46,6 +46,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txt_precio = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtBox_img = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +91,7 @@
             // txt_detalle
             // 
             this.txt_detalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_detalle.Location = new System.Drawing.Point(31, 223);
+            this.txt_detalle.Location = new System.Drawing.Point(31, 198);
             this.txt_detalle.Name = "txt_detalle";
             this.txt_detalle.Size = new System.Drawing.Size(202, 30);
             this.txt_detalle.TabIndex = 12;
@@ -104,7 +106,6 @@
             this.txt_stockid.Name = "txt_stockid";
             this.txt_stockid.Size = new System.Drawing.Size(121, 30);
             this.txt_stockid.TabIndex = 13;
-            this.txt_stockid.Text = "stock";
             this.txt_stockid.TextChanged += new System.EventHandler(this.txt_stockid_TextChanged);
             // 
             // generoBox
@@ -203,7 +204,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(26, 195);
+            this.label6.Location = new System.Drawing.Point(26, 170);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 25);
             this.label6.TabIndex = 21;
@@ -215,7 +216,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(28, 297);
+            this.label8.Location = new System.Drawing.Point(32, 245);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 25);
             this.label8.TabIndex = 23;
@@ -225,16 +226,18 @@
             // txt_precio
             // 
             this.txt_precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precio.Location = new System.Drawing.Point(33, 325);
+            this.txt_precio.Location = new System.Drawing.Point(31, 277);
             this.txt_precio.Name = "txt_precio";
             this.txt_precio.Size = new System.Drawing.Size(202, 30);
             this.txt_precio.TabIndex = 5;
-            this.txt_precio.Text = "Ingrese precio";
+            this.txt_precio.Text = "Ingrese Precio";
             this.txt_precio.TextChanged += new System.EventHandler(this.txt_precio_TextChanged);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gray;
+            this.groupBox1.Controls.Add(this.txtBox_img);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.generoBox);
             this.groupBox1.Controls.Add(this.txt_stockid);
@@ -257,6 +260,26 @@
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Crear Zapatilla";
+            // 
+            // txtBox_img
+            // 
+            this.txtBox_img.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBox_img.Location = new System.Drawing.Point(29, 360);
+            this.txtBox_img.Name = "txtBox_img";
+            this.txtBox_img.Size = new System.Drawing.Size(202, 30);
+            this.txtBox_img.TabIndex = 26;
+            this.txtBox_img.Text = "Ingrese Imagen";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(32, 332);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(83, 25);
+            this.label7.TabIndex = 25;
+            this.label7.Text = "Imagen";
             // 
             // label1
             // 
@@ -307,6 +330,8 @@
         private System.Windows.Forms.TextBox txt_precio;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBox_img;
+        private System.Windows.Forms.Label label7;
     }
 }
 
