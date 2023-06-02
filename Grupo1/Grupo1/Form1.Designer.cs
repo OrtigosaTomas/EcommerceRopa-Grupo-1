@@ -29,7 +29,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.boton_crear = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -45,79 +44,84 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_precio = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Crear una nueva zapatilla";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txt_nombre
             // 
-            this.txt_nombre.Location = new System.Drawing.Point(44, 85);
+            this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre.Location = new System.Drawing.Point(29, 125);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(158, 22);
+            this.txt_nombre.Size = new System.Drawing.Size(204, 30);
             this.txt_nombre.TabIndex = 1;
             this.txt_nombre.Text = "Ingrese Nombre";
             this.txt_nombre.TextChanged += new System.EventHandler(this.txt_nombre_TextChanged);
             // 
             // boton_crear
             // 
-            this.boton_crear.Location = new System.Drawing.Point(242, 279);
+            this.boton_crear.BackColor = System.Drawing.Color.Gray;
+            this.boton_crear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boton_crear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.boton_crear.Location = new System.Drawing.Point(624, 481);
             this.boton_crear.Name = "boton_crear";
-            this.boton_crear.Size = new System.Drawing.Size(146, 64);
+            this.boton_crear.Size = new System.Drawing.Size(160, 103);
             this.boton_crear.TabIndex = 3;
             this.boton_crear.Text = "Crear";
-            this.boton_crear.UseVisualStyleBackColor = true;
+            this.boton_crear.UseVisualStyleBackColor = false;
             this.boton_crear.Click += new System.EventHandler(this.boton_crear_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(44, 386);
+            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(12, 481);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 40);
+            this.button1.Size = new System.Drawing.Size(157, 103);
             this.button1.TabIndex = 7;
-            this.button1.Text = "VER PRODUCTOS";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Ver Productos";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txt_detalle
             // 
-            this.txt_detalle.Location = new System.Drawing.Point(46, 141);
+            this.txt_detalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_detalle.Location = new System.Drawing.Point(31, 223);
             this.txt_detalle.Name = "txt_detalle";
-            this.txt_detalle.Size = new System.Drawing.Size(156, 22);
+            this.txt_detalle.Size = new System.Drawing.Size(202, 30);
             this.txt_detalle.TabIndex = 12;
             this.txt_detalle.Text = "Ingrese Detalle";
             this.txt_detalle.TextChanged += new System.EventHandler(this.txt_detalle_TextChanged);
             // 
             // txt_stockid
             // 
-            this.txt_stockid.Location = new System.Drawing.Point(253, 245);
+            this.txt_stockid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_stockid.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txt_stockid.Location = new System.Drawing.Point(612, 370);
             this.txt_stockid.Name = "txt_stockid";
-            this.txt_stockid.Size = new System.Drawing.Size(110, 22);
+            this.txt_stockid.Size = new System.Drawing.Size(121, 30);
             this.txt_stockid.TabIndex = 13;
-            this.txt_stockid.Text = "stock id";
+            this.txt_stockid.Text = "stock";
             this.txt_stockid.TextChanged += new System.EventHandler(this.txt_stockid_TextChanged);
             // 
             // generoBox
             // 
+            this.generoBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.generoBox.FormattingEnabled = true;
             this.generoBox.Items.AddRange(new object[] {
             "Masculino",
             "Femenino"});
-            this.generoBox.Location = new System.Drawing.Point(253, 139);
+            this.generoBox.Location = new System.Drawing.Point(612, 180);
             this.generoBox.Name = "generoBox";
-            this.generoBox.Size = new System.Drawing.Size(121, 24);
+            this.generoBox.Size = new System.Drawing.Size(121, 33);
             this.generoBox.TabIndex = 14;
             this.generoBox.SelectedIndexChanged += new System.EventHandler(this.generoBox_SelectedIndexChanged);
             // 
             // talleBox
             // 
+            this.talleBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.talleBox.FormattingEnabled = true;
             this.talleBox.Items.AddRange(new object[] {
             "10",
@@ -125,126 +129,165 @@
             "30",
             "40",
             "50"});
-            this.talleBox.Location = new System.Drawing.Point(253, 85);
+            this.talleBox.Location = new System.Drawing.Point(612, 91);
             this.talleBox.Name = "talleBox";
-            this.talleBox.Size = new System.Drawing.Size(121, 24);
+            this.talleBox.Size = new System.Drawing.Size(121, 33);
             this.talleBox.TabIndex = 15;
             this.talleBox.SelectedIndexChanged += new System.EventHandler(this.talleBox_SelectedIndexChanged);
             // 
             // categoriaBox
             // 
+            this.categoriaBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoriaBox.FormattingEnabled = true;
             this.categoriaBox.Items.AddRange(new object[] {
             "Tennis",
             "Running",
             "Minimalista"});
-            this.categoriaBox.Location = new System.Drawing.Point(253, 189);
+            this.categoriaBox.Location = new System.Drawing.Point(612, 274);
             this.categoriaBox.Name = "categoriaBox";
-            this.categoriaBox.Size = new System.Drawing.Size(121, 24);
+            this.categoriaBox.Size = new System.Drawing.Size(121, 33);
             this.categoriaBox.TabIndex = 16;
             this.categoriaBox.SelectedIndexChanged += new System.EventHandler(this.categoriaBox_SelectedIndexChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(239, 59);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(378, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 16);
+            this.label2.Size = new System.Drawing.Size(195, 25);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Seleccione el talle";
+            this.label2.Text = "Seleccione el talle:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(239, 120);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(351, 183);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 16);
+            this.label3.Size = new System.Drawing.Size(222, 25);
             this.label3.TabIndex = 18;
-            this.label3.Text = "Seleccione el genero";
+            this.label3.Text = "Seleccione el genero:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(239, 170);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(329, 277);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 16);
+            this.label4.Size = new System.Drawing.Size(244, 25);
             this.label4.TabIndex = 19;
-            this.label4.Text = "Seleccione la categoria";
+            this.label4.Text = "Seleccione la categoria:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 59);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(26, 99);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 16);
+            this.label5.Size = new System.Drawing.Size(94, 25);
             this.label5.TabIndex = 20;
-            this.label5.Text = "Ingrese nombre:";
+            this.label5.Text = "Nombre:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(41, 122);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(26, 195);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 16);
+            this.label6.Size = new System.Drawing.Size(86, 25);
             this.label6.TabIndex = 21;
-            this.label6.Text = "Ingrese un detalle";
+            this.label6.Text = "Detalle:";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(44, 226);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(28, 297);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 16);
+            this.label8.Size = new System.Drawing.Size(80, 25);
             this.label8.TabIndex = 23;
-            this.label8.Text = "Ingrese un precio";
+            this.label8.Text = "Precio:";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // txt_precio
             // 
-            this.txt_precio.Location = new System.Drawing.Point(46, 245);
+            this.txt_precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_precio.Location = new System.Drawing.Point(33, 325);
             this.txt_precio.Name = "txt_precio";
-            this.txt_precio.Size = new System.Drawing.Size(156, 22);
+            this.txt_precio.Size = new System.Drawing.Size(202, 30);
             this.txt_precio.TabIndex = 5;
             this.txt_precio.Text = "Ingrese precio";
             this.txt_precio.TextChanged += new System.EventHandler(this.txt_precio_TextChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Gray;
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.generoBox);
+            this.groupBox1.Controls.Add(this.txt_stockid);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.talleBox);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.categoriaBox);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txt_detalle);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txt_precio);
+            this.groupBox1.Controls.Add(this.txt_nombre);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(772, 463);
+            this.groupBox1.TabIndex = 24;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Crear Zapatilla";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(307, 373);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(266, 25);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "Ingrese cantidad de stock:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(440, 503);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.categoriaBox);
-            this.Controls.Add(this.talleBox);
-            this.Controls.Add(this.generoBox);
-            this.Controls.Add(this.txt_stockid);
-            this.Controls.Add(this.txt_detalle);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(796, 596);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txt_precio);
             this.Controls.Add(this.boton_crear);
-            this.Controls.Add(this.txt_nombre);
-            this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Name = "Form1";
             this.Text = "Crear una nueva zapatilla";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_nombre;
         private System.Windows.Forms.Button boton_crear;
         private System.Windows.Forms.Button button1;
@@ -260,6 +303,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_precio;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
 

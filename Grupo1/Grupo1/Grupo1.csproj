@@ -162,6 +162,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Ventas.resx">
       <DependentUpon>Ventas.cs</DependentUpon>
@@ -181,7 +182,16 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
+    <None Include="Resources\zap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ven.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

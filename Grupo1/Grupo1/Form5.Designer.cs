@@ -42,133 +42,149 @@ namespace Grupo1
             this.txt_precio1 = new System.Windows.Forms.TextBox();
             this.boton_crear1 = new System.Windows.Forms.Button();
             this.txt_nombre1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.talleBox2 = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(69, 256);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.Location = new System.Drawing.Point(23, 240);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(110, 16);
+            this.label8.Size = new System.Drawing.Size(80, 25);
             this.label8.TabIndex = 43;
-            this.label8.Text = "Ingrese un precio";
+            this.label8.Text = "Precio:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(66, 152);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(25, 153);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 16);
+            this.label6.Size = new System.Drawing.Size(86, 25);
             this.label6.TabIndex = 41;
-            this.label6.Text = "Ingrese un detalle";
+            this.label6.Text = "Detalle:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(66, 89);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(23, 66);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 16);
+            this.label5.Size = new System.Drawing.Size(94, 25);
             this.label5.TabIndex = 40;
-            this.label5.Text = "Ingrese nombre:";
+            this.label5.Text = "Nombre:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(264, 200);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(319, 181);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 16);
+            this.label4.Size = new System.Drawing.Size(244, 25);
             this.label4.TabIndex = 39;
-            this.label4.Text = "Seleccione la categoria";
+            this.label4.Text = "Seleccione la categoria:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(264, 89);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(368, 97);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 16);
+            this.label2.Size = new System.Drawing.Size(195, 25);
             this.label2.TabIndex = 37;
-            this.label2.Text = "Seleccione el talle";
+            this.label2.Text = "Seleccione el talle:";
             // 
             // categoriaBox1
             // 
+            this.categoriaBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoriaBox1.FormattingEnabled = true;
             this.categoriaBox1.Items.AddRange(new object[] {
             "Piluso",
             "Plana",
             "Curva"});
-            this.categoriaBox1.Location = new System.Drawing.Point(278, 219);
+            this.categoriaBox1.Location = new System.Drawing.Point(601, 178);
             this.categoriaBox1.Name = "categoriaBox1";
-            this.categoriaBox1.Size = new System.Drawing.Size(121, 24);
+            this.categoriaBox1.Size = new System.Drawing.Size(121, 33);
             this.categoriaBox1.TabIndex = 36;
             // 
             // txt_stockid1
             // 
-            this.txt_stockid1.Location = new System.Drawing.Point(278, 275);
+            this.txt_stockid1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_stockid1.Location = new System.Drawing.Point(601, 268);
             this.txt_stockid1.Name = "txt_stockid1";
-            this.txt_stockid1.Size = new System.Drawing.Size(110, 22);
+            this.txt_stockid1.Size = new System.Drawing.Size(121, 30);
             this.txt_stockid1.TabIndex = 33;
             this.txt_stockid1.Text = "stock id";
             this.txt_stockid1.TextChanged += new System.EventHandler(this.txt_stockid1_TextChanged);
             // 
             // txt_detalle1
             // 
-            this.txt_detalle1.Location = new System.Drawing.Point(71, 171);
+            this.txt_detalle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_detalle1.Location = new System.Drawing.Point(28, 181);
             this.txt_detalle1.Name = "txt_detalle1";
-            this.txt_detalle1.Size = new System.Drawing.Size(156, 22);
+            this.txt_detalle1.Size = new System.Drawing.Size(196, 30);
             this.txt_detalle1.TabIndex = 32;
             this.txt_detalle1.Text = "Ingrese Detalle";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(69, 416);
+            this.button1.BackColor = System.Drawing.Color.Gray;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(12, 367);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 40);
+            this.button1.Size = new System.Drawing.Size(158, 103);
             this.button1.TabIndex = 30;
-            this.button1.Text = "VER PRODUCTOS";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Text = "Ver Productos";
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txt_precio1
             // 
-            this.txt_precio1.Location = new System.Drawing.Point(71, 275);
+            this.txt_precio1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_precio1.Location = new System.Drawing.Point(28, 268);
             this.txt_precio1.Name = "txt_precio1";
-            this.txt_precio1.Size = new System.Drawing.Size(156, 22);
+            this.txt_precio1.Size = new System.Drawing.Size(196, 30);
             this.txt_precio1.TabIndex = 29;
             this.txt_precio1.Text = "Ingrese precio";
             this.txt_precio1.TextChanged += new System.EventHandler(this.txt_precio1_TextChanged);
             // 
             // boton_crear1
             // 
-            this.boton_crear1.Location = new System.Drawing.Point(267, 309);
+            this.boton_crear1.BackColor = System.Drawing.Color.Gray;
+            this.boton_crear1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boton_crear1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.boton_crear1.Location = new System.Drawing.Point(578, 367);
             this.boton_crear1.Name = "boton_crear1";
-            this.boton_crear1.Size = new System.Drawing.Size(146, 64);
+            this.boton_crear1.Size = new System.Drawing.Size(179, 103);
             this.boton_crear1.TabIndex = 27;
             this.boton_crear1.Text = "Crear";
-            this.boton_crear1.UseVisualStyleBackColor = true;
+            this.boton_crear1.UseVisualStyleBackColor = false;
             this.boton_crear1.Click += new System.EventHandler(this.boton_crear_Click_1);
             // 
             // txt_nombre1
             // 
-            this.txt_nombre1.Location = new System.Drawing.Point(69, 115);
+            this.txt_nombre1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_nombre1.Location = new System.Drawing.Point(28, 94);
             this.txt_nombre1.Name = "txt_nombre1";
-            this.txt_nombre1.Size = new System.Drawing.Size(158, 22);
+            this.txt_nombre1.Size = new System.Drawing.Size(196, 30);
             this.txt_nombre1.TabIndex = 26;
             this.txt_nombre1.Text = "Ingrese Nombre";
             this.txt_nombre1.TextChanged += new System.EventHandler(this.txt_nombre1_TextChanged);
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(69, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(140, 16);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Crear una nueva gorra";
-            // 
             // talleBox2
             // 
+            this.talleBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.talleBox2.FormattingEnabled = true;
             this.talleBox2.Items.AddRange(new object[] {
             "10",
@@ -177,35 +193,61 @@ namespace Grupo1
             "40",
             "50",
             "60"});
-            this.talleBox2.Location = new System.Drawing.Point(278, 115);
+            this.talleBox2.Location = new System.Drawing.Point(601, 94);
             this.talleBox2.Name = "talleBox2";
-            this.talleBox2.Size = new System.Drawing.Size(121, 24);
+            this.talleBox2.Size = new System.Drawing.Size(121, 33);
             this.talleBox2.TabIndex = 45;
             this.talleBox2.SelectedIndexChanged += new System.EventHandler(this.talleBox2_SelectedIndexChanged1);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Gray;
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.talleBox2);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txt_stockid1);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.categoriaBox1);
+            this.groupBox1.Controls.Add(this.txt_detalle1);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.txt_precio1);
+            this.groupBox1.Controls.Add(this.txt_nombre1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(745, 349);
+            this.groupBox1.TabIndex = 46;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Crear Gorra";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(274, 268);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(289, 25);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Ingrese la cantidad de stock:";
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(479, 506);
-            this.Controls.Add(this.talleBox2);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.categoriaBox1);
-            this.Controls.Add(this.txt_stockid1);
-            this.Controls.Add(this.txt_detalle1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(769, 481);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.txt_precio1);
             this.Controls.Add(this.boton_crear1);
-            this.Controls.Add(this.txt_nombre1);
-            this.Controls.Add(this.label1);
             this.Name = "Form5";
             this.Text = "Form5";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -227,7 +269,8 @@ namespace Grupo1
         private System.Windows.Forms.TextBox txt_precio1;
         private System.Windows.Forms.Button boton_crear1;
         private System.Windows.Forms.TextBox txt_nombre1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox talleBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
