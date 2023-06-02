@@ -19,7 +19,7 @@ namespace Grupo1.Properties
     {
 
         MySqlConnection myCon;
-        String query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE 1";
+        String query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE 1";
 
         public Form4()
         {
@@ -68,6 +68,7 @@ namespace Grupo1.Properties
                         dgIndumentaria.Rows[n].Cells[1].Value = reader.GetString(1);
                         dgIndumentaria.Rows[n].Cells[2].Value = reader.GetString(2);
                         dgIndumentaria.Rows[n].Cells[3].Value = reader.GetString(3);
+                        dgIndumentaria.Rows[n].Cells[4].Value = reader.GetString(4);
                     }
                     reader.Close();
                 }
@@ -84,23 +85,23 @@ namespace Grupo1.Properties
 
         private void button1_Click(object sender, EventArgs e)
         {
-            query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+            query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
 
             if (radSinFg.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
+                query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"gorra\";";
             }
             if (radCurvas.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"3\";";
+                query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"3\";";
             }
             if (radPiluso.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"1\";";
+                query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"1\";";
             }
             if (radPlanas.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"2\";";
+                query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"2\";";
             }
 
             EjecutarQuery();
@@ -109,31 +110,31 @@ namespace Grupo1.Properties
 
         private void button2_Click(object sender, EventArgs e)
         {
-            query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"zapatilla\";";
+            query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"zapatilla\";";
 
             if (radSinFz.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"zapatilla\";";
+                query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `tipo` = \"zapatilla\";";
             }
             if (radHombre.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `genero_id` = \"1\";";
+                query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `genero_id` = \"1\";";
             }
             if (radMujer.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `genero_id` = \"2\";";
+                query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `genero_id` = \"2\";";
             }
             if (radMinimal.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"6\";";
+                query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"6\";";
             }
             if (radRunning.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"5\";";
+                query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"5\";";
             }
             if (radTenis.Checked == true)
             {
-                query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"4\";";
+                query = "SELECT `id`,`nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE `categoria_id` = \"4\";";
             }
 
             EjecutarQuery();
@@ -344,6 +345,12 @@ namespace Grupo1.Properties
         private void txtboxNombre_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            query = "DELETE FROM `indumentaria` WHERE id = " + txtBorrar.Text;
+            EjecutarQuery();
         }
     }
     }
