@@ -345,5 +345,13 @@ namespace Grupo1.Properties
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            query = "DELETE FROM `indumentaria` WHERE `nombre` = \"" + txtBorrar.Text + "\"";
+            EjecutarQuery();
+            query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE 1";
+            EjecutarQuery();
+        }
     }
     }
