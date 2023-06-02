@@ -42,6 +42,13 @@ namespace Grupo1
             form3.Show();
             this.Hide();
         }
+
+        private void realizarVentas_Click(object sender, EventArgs e)
+        {
+            Ventas ventas = new Ventas();
+            ventas.Show();
+            
+        }
     }
     }
 

@@ -17,13 +17,13 @@ namespace Grupo1.Modelos
         public string Detalle { set; get; }
         public int Genero_id { set; get; }
         public int Categoria_id { set; get; }
-        public int Talle_id { set; get; }
-        public int Stock_id { set; get; }
+        public int Talle { set; get; }
+        public int Stock { set; get; }
         public int Precio { set; get; }
         public Zapatilla()
         {
         }
-        public Zapatilla(int id, string nombre, string tipo, string detalle, int precio, int genero_id, int categoria_id, int talle_id, int stock_id) 
+        public Zapatilla(int id, string nombre, string tipo, string detalle, int precio, int genero_id, int categoria_id, int talle, int stock) 
         {
               Id=id;
            Nombre=nombre;
@@ -32,8 +32,8 @@ namespace Grupo1.Modelos
             Precio = precio;
             Genero_id = genero_id;
             Categoria_id = categoria_id;
-            Talle_id = talle_id;
-            Stock_id = stock_id;
+            Talle = talle;
+            Stock = stock;
 
         }      
 
