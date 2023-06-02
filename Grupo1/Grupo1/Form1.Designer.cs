@@ -29,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txt_nombre = new System.Windows.Forms.TextBox();
             this.boton_crear = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -278,8 +279,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.boton_crear);
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Crear una nueva zapatilla";
+            this.Text = "Crear una nueva Zapatilla";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

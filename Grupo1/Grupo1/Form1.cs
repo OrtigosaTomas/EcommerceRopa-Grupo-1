@@ -22,8 +22,6 @@ namespace Grupo1
         public Form1()
         {
             InitializeComponent();
-            this.Text = "My Application";
-            txt_nombre.Text = "Default Name";
         }
 
 

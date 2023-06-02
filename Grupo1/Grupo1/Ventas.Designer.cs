@@ -30,6 +30,7 @@ namespace Grupo1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventas));
             this.txtBox_id = new System.Windows.Forms.TextBox();
             this.textBox_nombreProducto = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -269,6 +270,7 @@ namespace Grupo1
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox_nombreProducto);
             this.Controls.Add(this.txtBox_id);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ventas";
             this.Text = "Ventas";
             ((System.ComponentModel.ISupportInitialize)(this.numericCant)).EndInit();

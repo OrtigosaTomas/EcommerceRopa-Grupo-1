@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.crearZapas = new System.Windows.Forms.Button();
             this.crearGorras = new System.Windows.Forms.Button();
             this.editarProductos = new System.Windows.Forms.Button();
@@ -163,6 +164,7 @@
             this.Controls.Add(this.editarProductos);
             this.Controls.Add(this.crearGorras);
             this.Controls.Add(this.crearZapas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Home";
             this.Text = "Home";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

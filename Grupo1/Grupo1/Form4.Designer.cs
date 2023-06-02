@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -320,7 +321,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(1005, 61);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 39);
+            this.label2.Size = new System.Drawing.Size(168, 38);
             this.label2.TabIndex = 12;
             this.label2.Text = "Modificar:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -509,8 +510,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "Lista de indumentaria";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgIndumentaria)).EndInit();
             this.gbGorras.ResumeLayout(false);
