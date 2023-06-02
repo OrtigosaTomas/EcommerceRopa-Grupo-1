@@ -1,0 +1,109 @@
+GORROS:
+
+Curvos
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Blue Moon','gorra','Tela',2200,2,25,3,3);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Bicolor','gorra','Tela sintetica',2500,1,25,3,3);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('La 25','gorra','Tela sintetica',2000,1,25,3,3);
+
+Pilusos
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Piluso Waw','gorra','Tela colo rosa',4000,1,50,1,3);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Thrasher','gorra','Oriental',4500,3,100,1,3);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Piluso Estrellado','gorra','Infantil',4000,1,50,1,3);
+
+Planas
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Gorra Plana','gorra','Tela gris Positivium', 3500,3,70,2,3);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES("Let'sTrain",'gorra','Tela Negra con aplique dorado',4500,2,150,2,3);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Dankley','gorra','Tela negra',4000,3,50,2,3);
+
+ZAPATILLAS HOMBRE:
+
+Tenis
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Adidas adizore','zapatilla','Negra y Blanca con detalles coral', 45000, 40 ,70,4,1);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Adidas Bounce','zapatilla','Blanca y negra con detalles coral', 40000, 30 ,50,4,1);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Adidas Original','zapatilla','Blanca con detalle negro', 28000, 10 ,50,4,1);
+
+Minimalista
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Merrel','zapatilla','Negra', 53000, 40 ,30,6,1);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Merrel','zapatilla','Negra con detalles en marron', 46000, 30 ,20,6,1);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Saguaro','zapatilla','Gris con detalles celestes', 40000, 40 ,20,6,1);
+
+Running
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Adidas Duramo','zapatilla','Negra', 57000, 40 ,30,5,1);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Adidas Falcon','zapatilla','Color rojo', 39000, 30 ,20,5,1);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Adidas Questar','zapatilla','Blanca con detalles celestes y grises', 46000, 40 ,30,5,1);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Puma','zapatilla','Negra con detalles en Amarillo', 37000, 20 ,60,5,1);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Jaguar','zapatilla','Negra, Blanca', 18000, 30 ,50,5,1);
+
+ZAPATILLAS MUJER:
+
+Minimalista:
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Merrel','zapatilla','Gris con suela celeste', 50000, 10 ,30,6,2);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Merrel','zapatilla','Color marron de cuero', 35000, 20 ,20,6,2);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Saguaro','zapatilla','Negra y Fucsia', 40000, 30 ,30,6,2);
+
+Running
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Montagne Ultrafly','zapatilla','Coral con suela rosa', 45000, 10 ,50,5,2);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Montagne','zapatilla','Celeste con detalles coral y suela blanca', 45000, 20 ,60,5,2);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Montagne VentoGT','zapatilla','Negra y Blanca con cordones Fucsia', 48000, 30 ,50,5,2);
+
+Tenis:
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Topper','zapatilla','Blanca', 27000, 10 ,50,4,2);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Topper','zapatilla','Negra con detalles en gris', 30000, 20 ,60,4,2);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Topper','zapatilla','Negra, Blanca y Amarillo', 38000, 30 ,50,4,2);
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Adidas Original','zapatilla','Blanca con detalle dorado', 28000, 10 ,50,4,2);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Puma','zapatilla','Negra con detalles en Fucsia', 30000, 20 ,60,4,2);
+
+INSERT INTO indumentaria(nombre, tipo, detalle, precio, talle, stock, categoria_id, genero_id) 
+VALUES('Jaguar','zapatilla','Negra, Blanca y Coral', 18000, 30 ,50,4,2);
