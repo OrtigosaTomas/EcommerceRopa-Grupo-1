@@ -287,7 +287,7 @@ namespace Grupo1
                 venta_nueva.Total = double.Parse(txtTotal.Text);
                 ventaController.crearVenta(venta_nueva);
 
-                string path = @"C:\Users\bruno\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\Ventas\factura.txt";
+                string path = @"C:\...\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\Ventas\factura.txt";
                 using (StreamWriter sw = new StreamWriter(path))
                 {
                     sw.WriteLine("Fecha: " + venta_nueva.Fecha);

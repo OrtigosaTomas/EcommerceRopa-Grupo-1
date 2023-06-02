@@ -298,3 +298,4 @@ C:\Users\bruno\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\ob
 C:\Users\bruno\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Form5.resources
 C:\Users\bruno\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Home.resources
 C:\Users\bruno\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Ventas.resources
+C:\Users\ortig\OneDrive\Documentos\GitHub\EcommerceRopa-Grupo-1\Grupo1\Grupo1\obj\Debug\Grupo1.Ventas.resources
