@@ -67,6 +67,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtBorrar = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgIndumentaria)).BeginInit();
             this.gbGorras.SuspendLayout();
             this.gbGenero.SuspendLayout();
@@ -306,9 +310,9 @@
             this.btnEdit.BackColor = System.Drawing.Color.Gray;
             this.btnEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnEdit.Location = new System.Drawing.Point(1012, 518);
+            this.btnEdit.Location = new System.Drawing.Point(1012, 330);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(193, 91);
+            this.btnEdit.Size = new System.Drawing.Size(193, 69);
             this.btnEdit.TabIndex = 11;
             this.btnEdit.Text = "Editar";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -319,7 +323,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(1005, 61);
+            this.label2.Location = new System.Drawing.Point(1026, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 38);
             this.label2.TabIndex = 12;
@@ -328,7 +332,7 @@
             // 
             // textBox_nombre
             // 
-            this.textBox_nombre.Location = new System.Drawing.Point(1012, 187);
+            this.textBox_nombre.Location = new System.Drawing.Point(1012, 91);
             this.textBox_nombre.Name = "textBox_nombre";
             this.textBox_nombre.Size = new System.Drawing.Size(193, 22);
             this.textBox_nombre.TabIndex = 13;
@@ -336,7 +340,7 @@
             // 
             // textBox_tipo
             // 
-            this.textBox_tipo.Location = new System.Drawing.Point(1012, 251);
+            this.textBox_tipo.Location = new System.Drawing.Point(1012, 155);
             this.textBox_tipo.Name = "textBox_tipo";
             this.textBox_tipo.Size = new System.Drawing.Size(193, 22);
             this.textBox_tipo.TabIndex = 14;
@@ -344,14 +348,14 @@
             // 
             // textBox_detalle
             // 
-            this.textBox_detalle.Location = new System.Drawing.Point(1012, 322);
+            this.textBox_detalle.Location = new System.Drawing.Point(1014, 226);
             this.textBox_detalle.Name = "textBox_detalle";
             this.textBox_detalle.Size = new System.Drawing.Size(193, 22);
             this.textBox_detalle.TabIndex = 15;
             // 
             // textBox_precio
             // 
-            this.textBox_precio.Location = new System.Drawing.Point(1012, 396);
+            this.textBox_precio.Location = new System.Drawing.Point(1014, 293);
             this.textBox_precio.Name = "textBox_precio";
             this.textBox_precio.Size = new System.Drawing.Size(193, 22);
             this.textBox_precio.TabIndex = 16;
@@ -372,7 +376,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(1007, 159);
+            this.label4.Location = new System.Drawing.Point(1007, 63);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(87, 25);
             this.label4.TabIndex = 18;
@@ -383,7 +387,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(1007, 223);
+            this.label5.Location = new System.Drawing.Point(1007, 127);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 25);
             this.label5.TabIndex = 19;
@@ -394,7 +398,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(1005, 294);
+            this.label6.Location = new System.Drawing.Point(1007, 198);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 25);
             this.label6.TabIndex = 20;
@@ -405,7 +409,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(1007, 368);
+            this.label7.Location = new System.Drawing.Point(1009, 265);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 25);
             this.label7.TabIndex = 21;
@@ -480,12 +484,58 @@
             this.btnBuscar.UseVisualStyleBackColor = false;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.Location = new System.Drawing.Point(1050, 424);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(124, 38);
+            this.label11.TabIndex = 29;
+            this.label11.Text = "Borrar:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.Location = new System.Drawing.Point(1010, 468);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(87, 25);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "Nombre";
+            // 
+            // txtBorrar
+            // 
+            this.txtBorrar.Location = new System.Drawing.Point(1015, 496);
+            this.txtBorrar.Name = "txtBorrar";
+            this.txtBorrar.Size = new System.Drawing.Size(193, 22);
+            this.txtBorrar.TabIndex = 30;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Gray;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(1015, 528);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(193, 69);
+            this.button3.TabIndex = 32;
+            this.button3.Text = "Borrar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1223, 641);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtBorrar);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -563,5 +613,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtBorrar;
+        private System.Windows.Forms.Button button3;
     }
 }
