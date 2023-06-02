@@ -431,7 +431,6 @@
             this.txtboxNombre.Name = "txtboxNombre";
             this.txtboxNombre.Size = new System.Drawing.Size(100, 22);
             this.txtboxNombre.TabIndex = 22;
-            this.txtboxNombre.TextChanged += new System.EventHandler(this.txtboxNombre_TextChanged);
             // 
             // txtboxTipo
             // 
