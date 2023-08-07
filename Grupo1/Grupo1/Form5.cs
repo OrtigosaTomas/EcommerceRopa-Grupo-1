@@ -316,5 +316,22 @@ else
         {
 
         }
+
+        private void botonSubirG_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog getImage = new OpenFileDialog();
+            getImage.InitialDirectory = "C:\\";
+            getImage.Filter = "Archivos de Imagen (*.jpg)(*.jpeg)|*.jpg^;*.jpeg|PNG (*.png)|*.png";
+
+            if (getImage.ShowDialog() == DialogResult.OK)
+            {
+                imagenGor.ImageLocation = getImage.FileName;
+                txtBox_img.Text = getImage.SafeFileName;
+            }
+            else
+            {
+                MessageBox.Show("No se selecciono imagen", "sin seleccion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+        }
     }
 }

@@ -49,13 +49,17 @@
             this.txtBox_img = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.imagenZap = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenZap)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_nombre
             // 
             this.txt_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_nombre.Location = new System.Drawing.Point(29, 125);
+            this.txt_nombre.Location = new System.Drawing.Point(29, 94);
             this.txt_nombre.Name = "txt_nombre";
             this.txt_nombre.Size = new System.Drawing.Size(204, 30);
             this.txt_nombre.TabIndex = 1;
@@ -67,7 +71,7 @@
             this.boton_crear.BackColor = System.Drawing.Color.Gray;
             this.boton_crear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton_crear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.boton_crear.Location = new System.Drawing.Point(624, 481);
+            this.boton_crear.Location = new System.Drawing.Point(624, 566);
             this.boton_crear.Name = "boton_crear";
             this.boton_crear.Size = new System.Drawing.Size(160, 103);
             this.boton_crear.TabIndex = 3;
@@ -80,7 +84,7 @@
             this.button1.BackColor = System.Drawing.Color.Gray;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(12, 481);
+            this.button1.Location = new System.Drawing.Point(12, 566);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(157, 103);
             this.button1.TabIndex = 7;
@@ -91,7 +95,7 @@
             // txt_detalle
             // 
             this.txt_detalle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_detalle.Location = new System.Drawing.Point(31, 198);
+            this.txt_detalle.Location = new System.Drawing.Point(31, 167);
             this.txt_detalle.Name = "txt_detalle";
             this.txt_detalle.Size = new System.Drawing.Size(202, 30);
             this.txt_detalle.TabIndex = 12;
@@ -192,7 +196,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(26, 99);
+            this.label5.Location = new System.Drawing.Point(26, 68);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(94, 25);
             this.label5.TabIndex = 20;
@@ -204,7 +208,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(26, 170);
+            this.label6.Location = new System.Drawing.Point(26, 139);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 25);
             this.label6.TabIndex = 21;
@@ -216,7 +220,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(32, 245);
+            this.label8.Location = new System.Drawing.Point(32, 214);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 25);
             this.label8.TabIndex = 23;
@@ -226,7 +230,7 @@
             // txt_precio
             // 
             this.txt_precio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_precio.Location = new System.Drawing.Point(31, 277);
+            this.txt_precio.Location = new System.Drawing.Point(31, 246);
             this.txt_precio.Name = "txt_precio";
             this.txt_precio.Size = new System.Drawing.Size(202, 30);
             this.txt_precio.TabIndex = 5;
@@ -236,6 +240,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gray;
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.imagenZap);
             this.groupBox1.Controls.Add(this.txtBox_img);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label1);
@@ -256,7 +262,7 @@
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(772, 463);
+            this.groupBox1.Size = new System.Drawing.Size(772, 548);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Crear Zapatilla";
@@ -264,22 +270,21 @@
             // txtBox_img
             // 
             this.txtBox_img.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_img.Location = new System.Drawing.Point(29, 360);
+            this.txtBox_img.Location = new System.Drawing.Point(31, 502);
             this.txtBox_img.Name = "txtBox_img";
             this.txtBox_img.Size = new System.Drawing.Size(202, 30);
             this.txtBox_img.TabIndex = 26;
-            this.txtBox_img.Text = "Ingrese Imagen";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label7.Location = new System.Drawing.Point(32, 332);
+            this.label7.Location = new System.Drawing.Point(32, 308);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 25);
+            this.label7.Size = new System.Drawing.Size(90, 25);
             this.label7.TabIndex = 25;
-            this.label7.Text = "Imagen";
+            this.label7.Text = "Imagen:";
             // 
             // label1
             // 
@@ -292,12 +297,38 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Ingrese cantidad de stock:";
             // 
+            // imagenZap
+            // 
+            this.imagenZap.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.imagenZap.Location = new System.Drawing.Point(33, 342);
+            this.imagenZap.Name = "imagenZap";
+            this.imagenZap.Size = new System.Drawing.Size(200, 159);
+            this.imagenZap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagenZap.TabIndex = 27;
+            this.imagenZap.TabStop = false;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.button2.Location = new System.Drawing.Point(128, 297);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 39);
+            this.button2.TabIndex = 28;
+            this.button2.Text = "Subir";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(796, 596);
+            this.ClientSize = new System.Drawing.Size(796, 681);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.boton_crear);
@@ -308,6 +339,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenZap)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -332,6 +364,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBox_img;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox imagenZap;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
