@@ -8,6 +8,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -66,7 +67,7 @@ namespace Grupo1
                 myCon.Close();
                 
                 Trace.WriteLine("hola");
-
+                
 
 
                 if (string.IsNullOrEmpty(txt_nombre.Text) || txt_nombre.Text == "Ingrese Nombre")
@@ -135,7 +136,8 @@ namespace Grupo1
                 }
                 else
                 {
-
+                    Trace.WriteLine(Application.StartupPath + "\\Resources\\" + txtBox_img.Text);
+                    imagenZap.Image.Save(Application.StartupPath + "\\Resources\\" + txtBox_img.Text);
                     zap_nueva.Img = txtBox_img.Text;
                 }
 

@@ -45,11 +45,12 @@ namespace Grupo1
             this.txt_nombre1 = new System.Windows.Forms.TextBox();
             this.talleBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.imagenGor = new System.Windows.Forms.PictureBox();
+            this.botonSubirG = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtBox_img = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.botonSubirG = new System.Windows.Forms.Button();
-            this.imagenGor = new System.Windows.Forms.PictureBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGor)).BeginInit();
             this.SuspendLayout();
@@ -232,6 +233,28 @@ namespace Grupo1
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Crear Gorra";
             // 
+            // imagenGor
+            // 
+            this.imagenGor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.imagenGor.Location = new System.Drawing.Point(28, 309);
+            this.imagenGor.Name = "imagenGor";
+            this.imagenGor.Size = new System.Drawing.Size(200, 159);
+            this.imagenGor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagenGor.TabIndex = 52;
+            this.imagenGor.TabStop = false;
+            // 
+            // botonSubirG
+            // 
+            this.botonSubirG.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonSubirG.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.botonSubirG.Location = new System.Drawing.Point(112, 264);
+            this.botonSubirG.Name = "botonSubirG";
+            this.botonSubirG.Size = new System.Drawing.Size(105, 39);
+            this.botonSubirG.TabIndex = 51;
+            this.botonSubirG.Text = "Subir";
+            this.botonSubirG.UseVisualStyleBackColor = true;
+            this.botonSubirG.Click += new System.EventHandler(this.botonSubirG_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -263,27 +286,9 @@ namespace Grupo1
             this.label1.TabIndex = 46;
             this.label1.Text = "Ingrese la cantidad de stock:";
             // 
-            // botonSubirG
+            // openFileDialog1
             // 
-            this.botonSubirG.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonSubirG.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.botonSubirG.Location = new System.Drawing.Point(112, 264);
-            this.botonSubirG.Name = "botonSubirG";
-            this.botonSubirG.Size = new System.Drawing.Size(105, 39);
-            this.botonSubirG.TabIndex = 51;
-            this.botonSubirG.Text = "Subir";
-            this.botonSubirG.UseVisualStyleBackColor = true;
-            this.botonSubirG.Click += new System.EventHandler(this.botonSubirG_Click);
-            // 
-            // imagenGor
-            // 
-            this.imagenGor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.imagenGor.Location = new System.Drawing.Point(28, 309);
-            this.imagenGor.Name = "imagenGor";
-            this.imagenGor.Size = new System.Drawing.Size(200, 159);
-            this.imagenGor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagenGor.TabIndex = 52;
-            this.imagenGor.TabStop = false;
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form5
             // 
@@ -329,5 +334,6 @@ namespace Grupo1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button botonSubirG;
         private System.Windows.Forms.PictureBox imagenGor;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

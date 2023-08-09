@@ -120,7 +120,7 @@ else
                 }
                 else
                 {
-
+                    imagenGor.Image.Save(Application.StartupPath + "\\Resources\\" + txtBox_img.Text);
                     gor_nueva.Img = txtBox_img.Text;
                 }
 
