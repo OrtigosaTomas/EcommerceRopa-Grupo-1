@@ -211,7 +211,7 @@ else
                 if (DEBUG_MODE == 1)
                 {
 
-                    Trace.WriteLine("Se esta creando una zapatilla");
+                    Trace.WriteLine("Se esta creando una gorra");
                 }
                 if (DEBUG_MODE == 2)
                 {
@@ -220,7 +220,7 @@ else
             }
             catch (Exception ex)
             {
-                Trace.WriteLine("Ocurrio un error al crear una nueva zapatilla" + ex);
+                Trace.WriteLine("Ocurrio un error al crear una nueva gorra" + ex);
             }
         }
 
