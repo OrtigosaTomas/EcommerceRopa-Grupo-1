@@ -156,8 +156,9 @@ namespace Grupo1.Properties
             textBox_detalle.Text = row.Cells[2]?.Value?.ToString();
             textBox_tipo.Text = row.Cells[1]?.Value?.ToString();
             textBox_precio.Text = row.Cells[3]?.Value?.ToString();
-            imgBox.Text = row.Cells[4]?.Value?.ToString();
-
+            labelImagen.Text = row.Cells[4]?.Value?.ToString();
+            Image i = Image.FromFile(Application.StartupPath + "\\Resources\\" + labelImagen.Text);
+            pictureBoxImagen.Image = i;
         }
 
 
@@ -332,7 +333,7 @@ namespace Grupo1.Properties
             {
                 where = where + " AND precio like \"%" + txtboxPrecio.Text + "%\"; ";
             }
-            query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria`" + where;
+            query = "SELECT `nombre`, `tipo`, `detalle`, `precio`,`img` FROM `indumentaria`" + where;
             EjecutarQuery();
         }
 
@@ -350,7 +351,7 @@ namespace Grupo1.Properties
         {
             query = "DELETE FROM `indumentaria` WHERE `nombre` = \"" + txtBorrar.Text + "\"";
             EjecutarQuery();
-            query = "SELECT `nombre`, `tipo`, `detalle`, `precio` FROM `indumentaria` WHERE 1";
+            query = "SELECT `nombre`, `tipo`, `detalle`, `precio`,`img` FROM `indumentaria` WHERE 1";
             EjecutarQuery();
         }
 

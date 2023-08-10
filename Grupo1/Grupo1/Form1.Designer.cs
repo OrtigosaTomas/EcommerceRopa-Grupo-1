@@ -46,12 +46,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txt_precio = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtBox_img = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.imagenZap = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.imagenZap = new System.Windows.Forms.PictureBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button2 = new System.Windows.Forms.Button();
+            this.labelImagen = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenZap)).BeginInit();
             this.SuspendLayout();
@@ -240,9 +240,9 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gray;
+            this.groupBox1.Controls.Add(this.labelImagen);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.imagenZap);
-            this.groupBox1.Controls.Add(this.txtBox_img);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.generoBox);
@@ -267,13 +267,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Crear Zapatilla";
             // 
-            // txtBox_img
+            // button2
             // 
-            this.txtBox_img.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_img.Location = new System.Drawing.Point(31, 502);
-            this.txtBox_img.Name = "txtBox_img";
-            this.txtBox_img.Size = new System.Drawing.Size(202, 30);
-            this.txtBox_img.TabIndex = 26;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.button2.Location = new System.Drawing.Point(128, 297);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 39);
+            this.button2.TabIndex = 28;
+            this.button2.Text = "Subir";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // imagenZap
+            // 
+            this.imagenZap.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.imagenZap.Location = new System.Drawing.Point(33, 342);
+            this.imagenZap.Name = "imagenZap";
+            this.imagenZap.Size = new System.Drawing.Size(200, 159);
+            this.imagenZap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imagenZap.TabIndex = 27;
+            this.imagenZap.TabStop = false;
             // 
             // label7
             // 
@@ -297,31 +311,17 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Ingrese cantidad de stock:";
             // 
-            // imagenZap
-            // 
-            this.imagenZap.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.imagenZap.Location = new System.Drawing.Point(33, 342);
-            this.imagenZap.Name = "imagenZap";
-            this.imagenZap.Size = new System.Drawing.Size(200, 159);
-            this.imagenZap.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imagenZap.TabIndex = 27;
-            this.imagenZap.TabStop = false;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // button2
+            // labelImagen
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.button2.Location = new System.Drawing.Point(128, 297);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 39);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Subir";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.labelImagen.AutoSize = true;
+            this.labelImagen.Location = new System.Drawing.Point(77, 504);
+            this.labelImagen.Name = "labelImagen";
+            this.labelImagen.Size = new System.Drawing.Size(0, 38);
+            this.labelImagen.TabIndex = 29;
             // 
             // Form1
             // 
@@ -362,11 +362,11 @@
         private System.Windows.Forms.TextBox txt_precio;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtBox_img;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox imagenZap;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label labelImagen;
     }
 }
 

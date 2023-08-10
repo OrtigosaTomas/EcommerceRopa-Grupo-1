@@ -48,9 +48,9 @@ namespace Grupo1
             this.imagenGor = new System.Windows.Forms.PictureBox();
             this.botonSubirG = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtBox_img = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.labelImagen = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGor)).BeginInit();
             this.SuspendLayout();
@@ -208,10 +208,10 @@ namespace Grupo1
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gray;
+            this.groupBox1.Controls.Add(this.labelImagen);
             this.groupBox1.Controls.Add(this.imagenGor);
             this.groupBox1.Controls.Add(this.botonSubirG);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtBox_img);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label8);
@@ -266,15 +266,6 @@ namespace Grupo1
             this.label3.TabIndex = 48;
             this.label3.Text = "Imagen";
             // 
-            // txtBox_img
-            // 
-            this.txtBox_img.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBox_img.Location = new System.Drawing.Point(28, 476);
-            this.txtBox_img.Name = "txtBox_img";
-            this.txtBox_img.Size = new System.Drawing.Size(196, 30);
-            this.txtBox_img.TabIndex = 47;
-            this.txtBox_img.TextChanged += new System.EventHandler(this.txtBox_img_TextChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -289,6 +280,14 @@ namespace Grupo1
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // labelImagen
+            // 
+            this.labelImagen.AutoSize = true;
+            this.labelImagen.Location = new System.Drawing.Point(69, 471);
+            this.labelImagen.Name = "labelImagen";
+            this.labelImagen.Size = new System.Drawing.Size(0, 38);
+            this.labelImagen.TabIndex = 53;
             // 
             // Form5
             // 
@@ -330,10 +329,10 @@ namespace Grupo1
         private System.Windows.Forms.ComboBox talleBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtBox_img;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button botonSubirG;
         private System.Windows.Forms.PictureBox imagenGor;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Label labelImagen;
     }
 }

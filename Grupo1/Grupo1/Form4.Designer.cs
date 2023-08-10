@@ -38,6 +38,11 @@
             this.radHombre = new System.Windows.Forms.RadioButton();
             this.radMujer = new System.Windows.Forms.RadioButton();
             this.dgIndumentaria = new System.Windows.Forms.DataGridView();
+            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colImagen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbGorras = new System.Windows.Forms.GroupBox();
             this.radSinFg = new System.Windows.Forms.RadioButton();
             this.gbGenero = new System.Windows.Forms.GroupBox();
@@ -69,12 +74,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBoxImagen = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.imgBox = new System.Windows.Forms.TextBox();
-            this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colDetalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPrecio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colImagen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.labelImagen = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgIndumentaria)).BeginInit();
             this.gbGorras.SuspendLayout();
             this.gbGenero.SuspendLayout();
@@ -198,6 +198,41 @@
             this.dgIndumentaria.TabIndex = 8;
             this.dgIndumentaria.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgIndumentaria_CellClick);
             this.dgIndumentaria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgIndumentaria_CellContentClick);
+            // 
+            // colNombre
+            // 
+            this.colNombre.HeaderText = "Nombre";
+            this.colNombre.MinimumWidth = 6;
+            this.colNombre.Name = "colNombre";
+            this.colNombre.Width = 125;
+            // 
+            // colTipo
+            // 
+            this.colTipo.HeaderText = "Tipo";
+            this.colTipo.MinimumWidth = 6;
+            this.colTipo.Name = "colTipo";
+            this.colTipo.Width = 125;
+            // 
+            // colDetalle
+            // 
+            this.colDetalle.HeaderText = "Detalle";
+            this.colDetalle.MinimumWidth = 6;
+            this.colDetalle.Name = "colDetalle";
+            this.colDetalle.Width = 125;
+            // 
+            // colPrecio
+            // 
+            this.colPrecio.HeaderText = "Precio";
+            this.colPrecio.MinimumWidth = 6;
+            this.colPrecio.Name = "colPrecio";
+            this.colPrecio.Width = 125;
+            // 
+            // colImagen
+            // 
+            this.colImagen.HeaderText = "Imagen";
+            this.colImagen.MinimumWidth = 6;
+            this.colImagen.Name = "colImagen";
+            this.colImagen.Width = 125;
             // 
             // gbGorras
             // 
@@ -520,6 +555,7 @@
             this.pictureBoxImagen.Location = new System.Drawing.Point(1165, 53);
             this.pictureBoxImagen.Name = "pictureBoxImagen";
             this.pictureBoxImagen.Size = new System.Drawing.Size(182, 178);
+            this.pictureBoxImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxImagen.TabIndex = 34;
             this.pictureBoxImagen.TabStop = false;
             // 
@@ -534,47 +570,15 @@
             this.label13.TabIndex = 35;
             this.label13.Text = "Imagen:";
             // 
-            // imgBox
+            // labelImagen
             // 
-            this.imgBox.Location = new System.Drawing.Point(1162, 237);
-            this.imgBox.Name = "imgBox";
-            this.imgBox.Size = new System.Drawing.Size(193, 22);
-            this.imgBox.TabIndex = 36;
-            // 
-            // colNombre
-            // 
-            this.colNombre.HeaderText = "Nombre";
-            this.colNombre.MinimumWidth = 6;
-            this.colNombre.Name = "colNombre";
-            this.colNombre.Width = 125;
-            // 
-            // colTipo
-            // 
-            this.colTipo.HeaderText = "Tipo";
-            this.colTipo.MinimumWidth = 6;
-            this.colTipo.Name = "colTipo";
-            this.colTipo.Width = 125;
-            // 
-            // colDetalle
-            // 
-            this.colDetalle.HeaderText = "Detalle";
-            this.colDetalle.MinimumWidth = 6;
-            this.colDetalle.Name = "colDetalle";
-            this.colDetalle.Width = 125;
-            // 
-            // colPrecio
-            // 
-            this.colPrecio.HeaderText = "Precio";
-            this.colPrecio.MinimumWidth = 6;
-            this.colPrecio.Name = "colPrecio";
-            this.colPrecio.Width = 125;
-            // 
-            // colImagen
-            // 
-            this.colImagen.HeaderText = "Imagen";
-            this.colImagen.MinimumWidth = 6;
-            this.colImagen.Name = "colImagen";
-            this.colImagen.Width = 125;
+            this.labelImagen.AutoSize = true;
+            this.labelImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImagen.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelImagen.Location = new System.Drawing.Point(1213, 235);
+            this.labelImagen.Name = "labelImagen";
+            this.labelImagen.Size = new System.Drawing.Size(0, 29);
+            this.labelImagen.TabIndex = 36;
             // 
             // Form4
             // 
@@ -582,7 +586,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(1370, 796);
-            this.Controls.Add(this.imgBox);
+            this.Controls.Add(this.labelImagen);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pictureBoxImagen);
             this.Controls.Add(this.button3);
@@ -669,11 +673,11 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBoxImagen;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox imgBox;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTipo;
         private System.Windows.Forms.DataGridViewTextBoxColumn colDetalle;
         private System.Windows.Forms.DataGridViewTextBoxColumn colPrecio;
         private System.Windows.Forms.DataGridViewTextBoxColumn colImagen;
+        private System.Windows.Forms.Label labelImagen;
     }
 }

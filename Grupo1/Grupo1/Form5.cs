@@ -114,14 +114,14 @@ else
                 }
 
 
-                if (string.IsNullOrEmpty(txtBox_img.Text) || txtBox_img.Text == "Ingrese Imagen")
+                if (string.IsNullOrEmpty(labelImagen.Text) || labelImagen.Text == "Ingrese Imagen")
                 {
                     MessageBox.Show("Ingrese una imagen");
                 }
                 else
                 {
-                    imagenGor.Image.Save(Application.StartupPath + "\\Resources\\" + txtBox_img.Text);
-                    gor_nueva.Img = txtBox_img.Text;
+                    imagenGor.Image.Save(Application.StartupPath + "\\Resources\\" + labelImagen.Text);
+                    gor_nueva.Img = labelImagen.Text;
                 }
 
 
@@ -326,7 +326,7 @@ else
             if (getImage.ShowDialog() == DialogResult.OK)
             {
                 imagenGor.ImageLocation = getImage.FileName;
-                txtBox_img.Text = getImage.SafeFileName;
+                labelImagen.Text = getImage.SafeFileName;
             }
             else
             {

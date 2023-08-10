@@ -130,15 +130,15 @@ namespace Grupo1
                 }
 
 
-                if (string.IsNullOrEmpty(txtBox_img.Text) || txtBox_img.Text == "Ingrese Imagen")
+                if (string.IsNullOrEmpty(labelImagen.Text) || labelImagen.Text == "Ingrese Imagen")
                 {
                     MessageBox.Show("Ingrese una imagen");
                 }
                 else
                 {
-                    Trace.WriteLine(Application.StartupPath + "\\Resources\\" + txtBox_img.Text);
-                    imagenZap.Image.Save(Application.StartupPath + "\\Resources\\" + txtBox_img.Text);
-                    zap_nueva.Img = txtBox_img.Text;
+                    Trace.WriteLine(Application.StartupPath + "\\Resources\\" + labelImagen.Text);
+                    imagenZap.Image.Save(Application.StartupPath + "\\Resources\\" + labelImagen.Text);
+                    zap_nueva.Img = labelImagen.Text;
                 }
 
 
@@ -354,7 +354,7 @@ namespace Grupo1
             if (getImage.ShowDialog() == DialogResult.OK)
             {
                 imagenZap.ImageLocation = getImage.FileName;
-                txtBox_img.Text = getImage.SafeFileName;
+                labelImagen.Text = getImage.SafeFileName;
             } else {
                 MessageBox.Show("No se selecciono imagen", "sin seleccion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
