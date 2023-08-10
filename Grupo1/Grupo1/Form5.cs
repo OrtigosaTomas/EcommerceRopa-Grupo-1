@@ -51,6 +51,7 @@ namespace Grupo1
                 string user = "root";
                 string pass = "";
                 string cadenaConexion = "server=" + server + ";database=" + database + ";" + "Uid=" + user + ";" + ";pwd=" + pass + ";";
+                Boolean validaciones = false;
 
                 MySqlConnection myCon = new MySqlConnection(cadenaConexion);
                 myCon.Open();
@@ -71,7 +72,8 @@ namespace Grupo1
 
 
                 if(string.IsNullOrEmpty(txt_nombre1.Text) || txt_nombre1.Text == "Ingrese Nombre")
-{
+                {
+                    validaciones = true;
                     MessageBox.Show("Ingrese un nombre");
                 }
 else
@@ -87,6 +89,7 @@ else
 
                 if (string.IsNullOrEmpty(txt_detalle1.Text) || txt_detalle1.Text == "Ingrese Detalle")
                 {
+                    validaciones = true;
                     MessageBox.Show("Ingrese un detalle");
                 }
                 else
@@ -105,6 +108,7 @@ else
 
                 if (string.IsNullOrEmpty(txt_precio1.Text) || txt_precio1.Text == "Ingrese Precio")
                 {
+                    validaciones = true;
                     MessageBox.Show("Ingrese un precio");
                 }
                 else
@@ -116,6 +120,7 @@ else
 
                 if (string.IsNullOrEmpty(labelImagen.Text) || labelImagen.Text == "Ingrese Imagen")
                 {
+                    validaciones = true;
                     MessageBox.Show("Ingrese una imagen");
                 }
                 else
@@ -129,6 +134,7 @@ else
 
                 if (string.IsNullOrEmpty(talleBox2.Text))
                 {
+                    validaciones = true;
                     MessageBox.Show("Seleccione un talle");
                 }
                 else
@@ -144,6 +150,7 @@ else
                 Trace.WriteLine("2");
                 if (categoriaBox1.SelectedItem == null)
                 {
+                    validaciones = true;
                     MessageBox.Show("Seleccione una categoria");
                 }
 
@@ -166,6 +173,7 @@ else
 
                 if (string.IsNullOrEmpty(txt_stockid1.Text) )
                 {
+                    validaciones = true;
                     MessageBox.Show("Ingrese un stock");
                 }
                 else
@@ -177,8 +185,15 @@ else
                 Trace.WriteLine("1");
 
 
-
-                gorController.crearGorra(gor_nueva);
+                if (validaciones == true)
+                {
+                    MessageBox.Show("Ocurrio un error al crear una nueva gorra");
+                }
+                else
+                {
+                    gorController.crearGorra(gor_nueva);
+                    MessageBox.Show("Se ha creado una gorra", "Éxito"); 
+                }
 
 
                 Trace.WriteLine("44");
@@ -187,7 +202,6 @@ else
 
                 if (DEBUG_MODE == 1)
                 {
-                    MessageBox.Show("Se ha creado una gorra", "Éxito");
                     Trace.WriteLine("Se esta creando una gorra");
                 }
                 if (DEBUG_MODE == 2)

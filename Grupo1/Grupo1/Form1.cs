@@ -52,6 +52,7 @@ namespace Grupo1
                 string user = "root";
                 string pass = "";
                 string cadenaConexion = "server=" + server + ";database=" + database + ";" + "Uid=" + user + ";" + ";pwd=" + pass + ";";
+                Boolean validaciones = false;
 
                 MySqlConnection myCon = new MySqlConnection(cadenaConexion);
                 myCon.Open();
@@ -67,12 +68,11 @@ namespace Grupo1
                 myCon.Close();
                 
                 Trace.WriteLine("hola");
-                
-
 
                 if (string.IsNullOrEmpty(txt_nombre.Text) || txt_nombre.Text == "Ingrese Nombre")
                 {
                     MessageBox.Show("Ingrese un nombre");
+                    validaciones=true;
                 }
                 else
                 {
@@ -90,6 +90,7 @@ namespace Grupo1
                 if (string.IsNullOrEmpty(txt_detalle.Text) || txt_detalle.Text == "Ingrese Detalle")
                 {
                     MessageBox.Show("Ingrese un detalle");
+                    validaciones = true;
                 }
                 else
                 {
@@ -103,6 +104,7 @@ namespace Grupo1
                 if (string.IsNullOrEmpty(txt_precio.Text) || txt_precio.Text == "Ingrese Precio")
                 {
                     MessageBox.Show("Ingrese un precio");
+                    validaciones = true;
                 }
                 else
                 {
@@ -117,6 +119,7 @@ namespace Grupo1
                 if (generoBox.SelectedItem == null)
                 {
                     MessageBox.Show("Seleccione un genero");
+                    validaciones = true;
                 }
                 else if
                  (generoBox.SelectedItem.ToString() == "Masculino")
@@ -133,6 +136,7 @@ namespace Grupo1
                 if (string.IsNullOrEmpty(labelImagen.Text) || labelImagen.Text == "Ingrese Imagen")
                 {
                     MessageBox.Show("Ingrese una imagen");
+                    validaciones = true;
                 }
                 else
                 {
@@ -147,6 +151,7 @@ namespace Grupo1
                 if (string.IsNullOrEmpty(talleBox.Text))
                 {
                     MessageBox.Show("Seleccione un talle");
+                    validaciones = true;
                 }
                 else
                 {
@@ -161,6 +166,7 @@ namespace Grupo1
                 if (categoriaBox.SelectedItem == null)
                 {
                     MessageBox.Show("Seleccione una categoria");
+                    validaciones = true;
                 }
 
                 else if (categoriaBox.SelectedItem.ToString() == "Tennis")
@@ -183,6 +189,7 @@ namespace Grupo1
                 if (string.IsNullOrEmpty(txt_stockid.Text))
                 {
                     MessageBox.Show("Ingrese un stock");
+                    validaciones = true;
                 }
                 else
                 {
@@ -191,16 +198,17 @@ namespace Grupo1
 
 
             
-
-
-                zapController.crearZapatilla(zap_nueva);
-
-              
+                if (validaciones == true)
+                {
+                    MessageBox.Show("Ocurrio un error al crear una nueva zapatilla");
+                }else{
+                    zapController.crearZapatilla(zap_nueva);
+                    MessageBox.Show("Se ha creado una zapatilla", "Éxito");
+                }
 
 
                 if (DEBUG_MODE == 1)
                 {
-                    MessageBox.Show("Se ha creado una zapatilla", "Éxito");
                     Trace.WriteLine("Se esta creando una zapatilla");
                 }
                 if (DEBUG_MODE == 2)
