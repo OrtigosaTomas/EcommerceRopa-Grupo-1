@@ -36,7 +36,6 @@
             this.txt_detalle = new System.Windows.Forms.TextBox();
             this.txt_stockid = new System.Windows.Forms.TextBox();
             this.generoBox = new System.Windows.Forms.ComboBox();
-            this.talleBox = new System.Windows.Forms.ComboBox();
             this.categoriaBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +51,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.talleBox = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenZap)).BeginInit();
             this.SuspendLayout();
@@ -125,22 +125,6 @@
             this.generoBox.TabIndex = 14;
             this.generoBox.SelectedIndexChanged += new System.EventHandler(this.generoBox_SelectedIndexChanged);
             // 
-            // talleBox
-            // 
-            this.talleBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.talleBox.FormattingEnabled = true;
-            this.talleBox.Items.AddRange(new object[] {
-            "10",
-            "20",
-            "30",
-            "40",
-            "50"});
-            this.talleBox.Location = new System.Drawing.Point(612, 91);
-            this.talleBox.Name = "talleBox";
-            this.talleBox.Size = new System.Drawing.Size(121, 33);
-            this.talleBox.TabIndex = 15;
-            this.talleBox.SelectedIndexChanged += new System.EventHandler(this.talleBox_SelectedIndexChanged);
-            // 
             // categoriaBox
             // 
             this.categoriaBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -160,11 +144,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(378, 94);
+            this.label2.Location = new System.Drawing.Point(413, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 25);
+            this.label2.Size = new System.Drawing.Size(160, 25);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Seleccione el talle:";
+            this.label2.Text = "Ingrese el talle:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
@@ -240,6 +224,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gray;
+            this.groupBox1.Controls.Add(this.talleBox);
             this.groupBox1.Controls.Add(this.labelImagen);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.imagenZap);
@@ -248,7 +233,6 @@
             this.groupBox1.Controls.Add(this.generoBox);
             this.groupBox1.Controls.Add(this.txt_stockid);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.talleBox);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.categoriaBox);
             this.groupBox1.Controls.Add(this.label5);
@@ -323,6 +307,14 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // talleBox
+            // 
+            this.talleBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.talleBox.Location = new System.Drawing.Point(612, 91);
+            this.talleBox.Name = "talleBox";
+            this.talleBox.Size = new System.Drawing.Size(121, 30);
+            this.talleBox.TabIndex = 30;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -351,7 +343,6 @@
         private System.Windows.Forms.TextBox txt_detalle;
         private System.Windows.Forms.TextBox txt_stockid;
         private System.Windows.Forms.ComboBox generoBox;
-        private System.Windows.Forms.ComboBox talleBox;
         private System.Windows.Forms.ComboBox categoriaBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -367,6 +358,7 @@
         private System.Windows.Forms.PictureBox imagenZap;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label labelImagen;
+        private System.Windows.Forms.TextBox talleBox;
     }
 }
 

@@ -127,38 +127,15 @@ else
 
 
 
-                if (talleBox2.SelectedItem == null)
+                if (string.IsNullOrEmpty(talleBox2.Text))
                 {
                     MessageBox.Show("Seleccione un talle");
                 }
-                else if (talleBox2.SelectedItem.ToString() == "10")
+                else
                 {
-                    gor_nueva.Talle = 1;
-                }
-                else if (talleBox2.SelectedItem.ToString() == "20")
-                {
+                    
+                   gor_nueva.Talle = int.Parse(talleBox2.Text);
 
-                    gor_nueva.Talle = 2;
-                }
-                else if (talleBox2.SelectedItem.ToString() == "30")
-                {
-
-                    gor_nueva.Talle = 3;
-                }
-                else if (talleBox2.SelectedItem.ToString() == "40")
-                {
-
-                    gor_nueva.Talle = 4;
-                }
-                else if (talleBox2.SelectedItem.ToString() == "50")
-                {
-
-                    gor_nueva.Talle = 5;
-                }
-                else if (talleBox2.SelectedItem.ToString() == "60")
-                {
-
-                    gor_nueva.Talle = 6;
                 }
 
 

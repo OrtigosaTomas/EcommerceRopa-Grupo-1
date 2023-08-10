@@ -43,7 +43,6 @@ namespace Grupo1
             this.txt_precio1 = new System.Windows.Forms.TextBox();
             this.boton_crear1 = new System.Windows.Forms.Button();
             this.txt_nombre1 = new System.Windows.Forms.TextBox();
-            this.talleBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelImagen = new System.Windows.Forms.Label();
             this.imagenGor = new System.Windows.Forms.PictureBox();
@@ -51,6 +50,7 @@ namespace Grupo1
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.talleBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGor)).BeginInit();
             this.SuspendLayout();
@@ -105,11 +105,11 @@ namespace Grupo1
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(368, 97);
+            this.label2.Location = new System.Drawing.Point(403, 94);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(195, 25);
+            this.label2.Size = new System.Drawing.Size(160, 25);
             this.label2.TabIndex = 37;
-            this.label2.Text = "Seleccione el talle:";
+            this.label2.Text = "Ingrese el talle:";
             // 
             // categoriaBox1
             // 
@@ -188,26 +188,10 @@ namespace Grupo1
             this.txt_nombre1.Text = "Ingrese Nombre";
             this.txt_nombre1.TextChanged += new System.EventHandler(this.txt_nombre1_TextChanged);
             // 
-            // talleBox2
-            // 
-            this.talleBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.talleBox2.FormattingEnabled = true;
-            this.talleBox2.Items.AddRange(new object[] {
-            "10",
-            "20",
-            "30",
-            "40",
-            "50",
-            "60"});
-            this.talleBox2.Location = new System.Drawing.Point(601, 94);
-            this.talleBox2.Name = "talleBox2";
-            this.talleBox2.Size = new System.Drawing.Size(121, 33);
-            this.talleBox2.TabIndex = 45;
-            this.talleBox2.SelectedIndexChanged += new System.EventHandler(this.talleBox2_SelectedIndexChanged1);
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Gray;
+            this.groupBox1.Controls.Add(this.talleBox2);
             this.groupBox1.Controls.Add(this.labelImagen);
             this.groupBox1.Controls.Add(this.imagenGor);
             this.groupBox1.Controls.Add(this.botonSubirG);
@@ -215,7 +199,6 @@ namespace Grupo1
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.talleBox2);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.txt_stockid1);
             this.groupBox1.Controls.Add(this.label5);
@@ -289,6 +272,14 @@ namespace Grupo1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // talleBox2
+            // 
+            this.talleBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.talleBox2.Location = new System.Drawing.Point(601, 91);
+            this.talleBox2.Name = "talleBox2";
+            this.talleBox2.Size = new System.Drawing.Size(121, 30);
+            this.talleBox2.TabIndex = 54;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -326,7 +317,6 @@ namespace Grupo1
         private System.Windows.Forms.TextBox txt_precio1;
         private System.Windows.Forms.Button boton_crear1;
         private System.Windows.Forms.TextBox txt_nombre1;
-        private System.Windows.Forms.ComboBox talleBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -334,5 +324,6 @@ namespace Grupo1
         private System.Windows.Forms.PictureBox imagenGor;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label labelImagen;
+        private System.Windows.Forms.TextBox talleBox2;
     }
 }

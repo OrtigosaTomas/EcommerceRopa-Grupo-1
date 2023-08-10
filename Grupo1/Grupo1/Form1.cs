@@ -142,34 +142,17 @@ namespace Grupo1
                 }
 
 
-                if (talleBox.SelectedItem == null)
+
+
+                if (string.IsNullOrEmpty(talleBox.Text))
                 {
                     MessageBox.Show("Seleccione un talle");
                 }
-
-                else if(talleBox.SelectedItem.ToString() == "10")
-                {
-                    zap_nueva.Talle = 1;
-                }
-                else if (talleBox.SelectedItem.ToString() == "20")
+                else
                 {
 
-                    zap_nueva.Talle = 2;
-                }
-                else if (talleBox.SelectedItem.ToString() == "30")
-                {
+                    zap_nueva.Talle = int.Parse(talleBox.Text);
 
-                    zap_nueva.Talle = 3;
-                }
-                else if (talleBox.SelectedItem.ToString() == "40")
-                {
-
-                    zap_nueva.Talle = 4;
-                }
-                else if (talleBox.SelectedItem.ToString() == "50")
-                {
-
-                    zap_nueva.Talle = 5;
                 }
 
 
