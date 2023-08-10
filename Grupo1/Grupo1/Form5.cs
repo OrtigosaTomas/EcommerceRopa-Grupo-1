@@ -210,7 +210,7 @@ else
 
                 if (DEBUG_MODE == 1)
                 {
-
+                    MessageBox.Show("Se ha creado una gorra", "Éxito");
                     Trace.WriteLine("Se esta creando una gorra");
                 }
                 if (DEBUG_MODE == 2)

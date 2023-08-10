@@ -45,12 +45,12 @@ namespace Grupo1
             this.txt_nombre1 = new System.Windows.Forms.TextBox();
             this.talleBox2 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelImagen = new System.Windows.Forms.Label();
             this.imagenGor = new System.Windows.Forms.PictureBox();
             this.botonSubirG = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.labelImagen = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGor)).BeginInit();
             this.SuspendLayout();
@@ -233,12 +233,20 @@ namespace Grupo1
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Crear Gorra";
             // 
+            // labelImagen
+            // 
+            this.labelImagen.AutoSize = true;
+            this.labelImagen.Location = new System.Drawing.Point(30, 488);
+            this.labelImagen.Name = "labelImagen";
+            this.labelImagen.Size = new System.Drawing.Size(0, 38);
+            this.labelImagen.TabIndex = 53;
+            // 
             // imagenGor
             // 
             this.imagenGor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.imagenGor.Location = new System.Drawing.Point(28, 309);
             this.imagenGor.Name = "imagenGor";
-            this.imagenGor.Size = new System.Drawing.Size(200, 159);
+            this.imagenGor.Size = new System.Drawing.Size(200, 176);
             this.imagenGor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imagenGor.TabIndex = 52;
             this.imagenGor.TabStop = false;
@@ -280,14 +288,6 @@ namespace Grupo1
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // labelImagen
-            // 
-            this.labelImagen.AutoSize = true;
-            this.labelImagen.Location = new System.Drawing.Point(69, 471);
-            this.labelImagen.Name = "labelImagen";
-            this.labelImagen.Size = new System.Drawing.Size(0, 38);
-            this.labelImagen.TabIndex = 53;
             // 
             // Form5
             // 

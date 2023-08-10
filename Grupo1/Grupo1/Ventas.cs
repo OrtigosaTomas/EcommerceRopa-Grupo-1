@@ -327,7 +327,7 @@ namespace Grupo1
 
 
                 }
-
+                MessageBox.Show("Se ha registrado una venta", "Éxito");
                 myCon.Close();
             }
             catch (Exception ex)

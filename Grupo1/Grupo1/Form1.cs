@@ -217,7 +217,7 @@ namespace Grupo1
 
                 if (DEBUG_MODE == 1)
                 {
-
+                    MessageBox.Show("Se ha creado una zapatilla", "Éxito");
                     Trace.WriteLine("Se esta creando una zapatilla");
                 }
                 if (DEBUG_MODE == 2)
